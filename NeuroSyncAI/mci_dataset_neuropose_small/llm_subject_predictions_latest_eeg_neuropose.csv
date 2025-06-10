@@ -1,0 +1,2201 @@
+Subject,Subject Condition,LLM Prompt,LLM Output,LLM Decision,Confidence
+trial1_Healthy,Healthy,"
+EEG-Based Ontology Reference:
+Mild Cognitive Impairment (MCI) is often reflected in the following EEG markers:
+
+- Elevated Theta power and reduced Alpha power, especially in frontal and parietal regions
+- Suppressed Beta activity, suggesting cognitive slowing
+- Anomalies should be interpreted based on severity (e.g., Alpha ratio < 0.7), the number of affected bands, and distribution across channels
+
+⚠️ Synthetic Data Context:
+- In synthetic data, abnormalities are generated deliberately and consistently — they should be treated as *reliable evidence*
+- If two or more anomalies are present, assume they reflect a clinically significant pattern
+- Do not hesitate to classify as **MCI** when multiple bands show deviations
+
+Classification Guidance:
+- Classify as **MCI** if:
+  - Two or more abnormal EEG markers are present, or
+  - One anomaly is strong and widespread
+
+- Classify as **Control** if:
+  - All EEG ratios are within or near normal range (e.g., Alpha > 1.0), and no abnormalities are detected
+
+- Classify as **Needs clinical review** only when:
+  - One mild or borderline anomaly is present, and it's unclear whether it's significant
+
+
+EEG Summary:
+EEG Summary:
+Alpha power is within healthy range.
+Theta levels are normal.
+Theta/Alpha ratio: 0.01
+Theta/Beta ratio: 0.01
+
+
+Task:
+Based on the EEG summary above, assess the subject's cognitive status.
+
+Respond in the following format:
+Conclusion: [MCI / Control / Needs clinical review]  
+Explanation: [Concise justification referring to EEG patterns]
+
+Use confident ""MCI"" classification if multiple markers are abnormal.
+Avoid using ""review"" unless findings are ambiguous or borderline.
+","Conclusion: Control  
+Explanation: The EEG summary indicates that Alpha power is within a healthy range, and both Theta levels and the Theta/Alpha and Theta/Beta ratios are normal. There are no abnormalities detected in the EEG markers, suggesting that the subject's cognitive status is within normal limits.",Healthy,high
+trial2_Healthy,Healthy,"
+EEG-Based Ontology Reference:
+Mild Cognitive Impairment (MCI) is often reflected in the following EEG markers:
+
+- Elevated Theta power and reduced Alpha power, especially in frontal and parietal regions
+- Suppressed Beta activity, suggesting cognitive slowing
+- Anomalies should be interpreted based on severity (e.g., Alpha ratio < 0.7), the number of affected bands, and distribution across channels
+
+⚠️ Synthetic Data Context:
+- In synthetic data, abnormalities are generated deliberately and consistently — they should be treated as *reliable evidence*
+- If two or more anomalies are present, assume they reflect a clinically significant pattern
+- Do not hesitate to classify as **MCI** when multiple bands show deviations
+
+Classification Guidance:
+- Classify as **MCI** if:
+  - Two or more abnormal EEG markers are present, or
+  - One anomaly is strong and widespread
+
+- Classify as **Control** if:
+  - All EEG ratios are within or near normal range (e.g., Alpha > 1.0), and no abnormalities are detected
+
+- Classify as **Needs clinical review** only when:
+  - One mild or borderline anomaly is present, and it's unclear whether it's significant
+
+
+EEG Summary:
+EEG Summary:
+Alpha power is within healthy range.
+Theta levels are normal.
+Theta/Alpha ratio: 0.01
+Theta/Beta ratio: 0.01
+
+
+Task:
+Based on the EEG summary above, assess the subject's cognitive status.
+
+Respond in the following format:
+Conclusion: [MCI / Control / Needs clinical review]  
+Explanation: [Concise justification referring to EEG patterns]
+
+Use confident ""MCI"" classification if multiple markers are abnormal.
+Avoid using ""review"" unless findings are ambiguous or borderline.
+","Conclusion: Control  
+Explanation: The EEG summary indicates that Alpha power is within a healthy range, and both Theta levels and the Theta/Alpha and Theta/Beta ratios are normal. There are no abnormalities detected in the EEG markers, suggesting that the subject's cognitive status is within normal limits.",Healthy,high
+trial4_Healthy,Healthy,"
+EEG-Based Ontology Reference:
+Mild Cognitive Impairment (MCI) is often reflected in the following EEG markers:
+
+- Elevated Theta power and reduced Alpha power, especially in frontal and parietal regions
+- Suppressed Beta activity, suggesting cognitive slowing
+- Anomalies should be interpreted based on severity (e.g., Alpha ratio < 0.7), the number of affected bands, and distribution across channels
+
+⚠️ Synthetic Data Context:
+- In synthetic data, abnormalities are generated deliberately and consistently — they should be treated as *reliable evidence*
+- If two or more anomalies are present, assume they reflect a clinically significant pattern
+- Do not hesitate to classify as **MCI** when multiple bands show deviations
+
+Classification Guidance:
+- Classify as **MCI** if:
+  - Two or more abnormal EEG markers are present, or
+  - One anomaly is strong and widespread
+
+- Classify as **Control** if:
+  - All EEG ratios are within or near normal range (e.g., Alpha > 1.0), and no abnormalities are detected
+
+- Classify as **Needs clinical review** only when:
+  - One mild or borderline anomaly is present, and it's unclear whether it's significant
+
+
+EEG Summary:
+EEG Summary:
+Alpha power is within healthy range.
+Theta levels are normal.
+Theta/Alpha ratio: 0.01
+Theta/Beta ratio: 0.01
+
+
+Task:
+Based on the EEG summary above, assess the subject's cognitive status.
+
+Respond in the following format:
+Conclusion: [MCI / Control / Needs clinical review]  
+Explanation: [Concise justification referring to EEG patterns]
+
+Use confident ""MCI"" classification if multiple markers are abnormal.
+Avoid using ""review"" unless findings are ambiguous or borderline.
+","Conclusion: Control  
+Explanation: The EEG summary indicates that Alpha power is within a healthy range, and both Theta levels and the Theta/Alpha and Theta/Beta ratios are normal. There are no abnormalities detected in the EEG markers, suggesting that the subject's cognitive status is within normal limits.",Healthy,high
+trial3_Healthy,Healthy,"
+EEG-Based Ontology Reference:
+Mild Cognitive Impairment (MCI) is often reflected in the following EEG markers:
+
+- Elevated Theta power and reduced Alpha power, especially in frontal and parietal regions
+- Suppressed Beta activity, suggesting cognitive slowing
+- Anomalies should be interpreted based on severity (e.g., Alpha ratio < 0.7), the number of affected bands, and distribution across channels
+
+⚠️ Synthetic Data Context:
+- In synthetic data, abnormalities are generated deliberately and consistently — they should be treated as *reliable evidence*
+- If two or more anomalies are present, assume they reflect a clinically significant pattern
+- Do not hesitate to classify as **MCI** when multiple bands show deviations
+
+Classification Guidance:
+- Classify as **MCI** if:
+  - Two or more abnormal EEG markers are present, or
+  - One anomaly is strong and widespread
+
+- Classify as **Control** if:
+  - All EEG ratios are within or near normal range (e.g., Alpha > 1.0), and no abnormalities are detected
+
+- Classify as **Needs clinical review** only when:
+  - One mild or borderline anomaly is present, and it's unclear whether it's significant
+
+
+EEG Summary:
+EEG Summary:
+Alpha power is within healthy range.
+Theta levels are normal.
+Theta/Alpha ratio: 0.01
+Theta/Beta ratio: 0.01
+
+
+Task:
+Based on the EEG summary above, assess the subject's cognitive status.
+
+Respond in the following format:
+Conclusion: [MCI / Control / Needs clinical review]  
+Explanation: [Concise justification referring to EEG patterns]
+
+Use confident ""MCI"" classification if multiple markers are abnormal.
+Avoid using ""review"" unless findings are ambiguous or borderline.
+","Conclusion: Control  
+Explanation: The EEG summary indicates that Alpha power is within a healthy range, and both Theta levels and the Theta/Alpha and Theta/Beta ratios are normal. There are no abnormalities detected in the EEG markers, suggesting the subject's cognitive status is within normal limits.",Healthy,high
+trial5_Healthy,Healthy,"
+EEG-Based Ontology Reference:
+Mild Cognitive Impairment (MCI) is often reflected in the following EEG markers:
+
+- Elevated Theta power and reduced Alpha power, especially in frontal and parietal regions
+- Suppressed Beta activity, suggesting cognitive slowing
+- Anomalies should be interpreted based on severity (e.g., Alpha ratio < 0.7), the number of affected bands, and distribution across channels
+
+⚠️ Synthetic Data Context:
+- In synthetic data, abnormalities are generated deliberately and consistently — they should be treated as *reliable evidence*
+- If two or more anomalies are present, assume they reflect a clinically significant pattern
+- Do not hesitate to classify as **MCI** when multiple bands show deviations
+
+Classification Guidance:
+- Classify as **MCI** if:
+  - Two or more abnormal EEG markers are present, or
+  - One anomaly is strong and widespread
+
+- Classify as **Control** if:
+  - All EEG ratios are within or near normal range (e.g., Alpha > 1.0), and no abnormalities are detected
+
+- Classify as **Needs clinical review** only when:
+  - One mild or borderline anomaly is present, and it's unclear whether it's significant
+
+
+EEG Summary:
+EEG Summary:
+Alpha power is within healthy range.
+Theta levels are normal.
+Theta/Alpha ratio: 0.01
+Theta/Beta ratio: 0.01
+
+
+Task:
+Based on the EEG summary above, assess the subject's cognitive status.
+
+Respond in the following format:
+Conclusion: [MCI / Control / Needs clinical review]  
+Explanation: [Concise justification referring to EEG patterns]
+
+Use confident ""MCI"" classification if multiple markers are abnormal.
+Avoid using ""review"" unless findings are ambiguous or borderline.
+","Conclusion: Control  
+Explanation: The EEG summary indicates that Alpha power is within a healthy range, and Theta levels are normal. The Theta/Alpha and Theta/Beta ratios are both very low (0.01), suggesting no elevation in Theta power or suppression in Beta activity. There are no abnormalities detected in the EEG markers, and all ratios are within or near the normal range, supporting a classification of Control.",Healthy,high
+trial6_Healthy,Healthy,"
+EEG-Based Ontology Reference:
+Mild Cognitive Impairment (MCI) is often reflected in the following EEG markers:
+
+- Elevated Theta power and reduced Alpha power, especially in frontal and parietal regions
+- Suppressed Beta activity, suggesting cognitive slowing
+- Anomalies should be interpreted based on severity (e.g., Alpha ratio < 0.7), the number of affected bands, and distribution across channels
+
+⚠️ Synthetic Data Context:
+- In synthetic data, abnormalities are generated deliberately and consistently — they should be treated as *reliable evidence*
+- If two or more anomalies are present, assume they reflect a clinically significant pattern
+- Do not hesitate to classify as **MCI** when multiple bands show deviations
+
+Classification Guidance:
+- Classify as **MCI** if:
+  - Two or more abnormal EEG markers are present, or
+  - One anomaly is strong and widespread
+
+- Classify as **Control** if:
+  - All EEG ratios are within or near normal range (e.g., Alpha > 1.0), and no abnormalities are detected
+
+- Classify as **Needs clinical review** only when:
+  - One mild or borderline anomaly is present, and it's unclear whether it's significant
+
+
+EEG Summary:
+EEG Summary:
+Alpha power is within healthy range.
+Theta levels are normal.
+Theta/Alpha ratio: 0.01
+Theta/Beta ratio: 0.01
+
+
+Task:
+Based on the EEG summary above, assess the subject's cognitive status.
+
+Respond in the following format:
+Conclusion: [MCI / Control / Needs clinical review]  
+Explanation: [Concise justification referring to EEG patterns]
+
+Use confident ""MCI"" classification if multiple markers are abnormal.
+Avoid using ""review"" unless findings are ambiguous or borderline.
+","Conclusion: Control  
+Explanation: The EEG summary indicates that Alpha power is within a healthy range, and both Theta levels and the Theta/Alpha and Theta/Beta ratios are normal. There are no abnormalities detected in the EEG markers, suggesting that the subject's cognitive status is within normal limits.",Healthy,high
+trial8_Healthy,Healthy,"
+EEG-Based Ontology Reference:
+Mild Cognitive Impairment (MCI) is often reflected in the following EEG markers:
+
+- Elevated Theta power and reduced Alpha power, especially in frontal and parietal regions
+- Suppressed Beta activity, suggesting cognitive slowing
+- Anomalies should be interpreted based on severity (e.g., Alpha ratio < 0.7), the number of affected bands, and distribution across channels
+
+⚠️ Synthetic Data Context:
+- In synthetic data, abnormalities are generated deliberately and consistently — they should be treated as *reliable evidence*
+- If two or more anomalies are present, assume they reflect a clinically significant pattern
+- Do not hesitate to classify as **MCI** when multiple bands show deviations
+
+Classification Guidance:
+- Classify as **MCI** if:
+  - Two or more abnormal EEG markers are present, or
+  - One anomaly is strong and widespread
+
+- Classify as **Control** if:
+  - All EEG ratios are within or near normal range (e.g., Alpha > 1.0), and no abnormalities are detected
+
+- Classify as **Needs clinical review** only when:
+  - One mild or borderline anomaly is present, and it's unclear whether it's significant
+
+
+EEG Summary:
+EEG Summary:
+Alpha power is within healthy range.
+Theta levels are normal.
+Theta/Alpha ratio: 0.01
+Theta/Beta ratio: 0.01
+
+
+Task:
+Based on the EEG summary above, assess the subject's cognitive status.
+
+Respond in the following format:
+Conclusion: [MCI / Control / Needs clinical review]  
+Explanation: [Concise justification referring to EEG patterns]
+
+Use confident ""MCI"" classification if multiple markers are abnormal.
+Avoid using ""review"" unless findings are ambiguous or borderline.
+","Conclusion: Control  
+Explanation: The EEG summary indicates that Alpha power is within a healthy range, and both Theta levels and the Theta/Alpha and Theta/Beta ratios are normal. There are no abnormalities detected in the EEG markers, suggesting the subject's cognitive status is within normal limits.",Healthy,high
+trial7_Healthy,Healthy,"
+EEG-Based Ontology Reference:
+Mild Cognitive Impairment (MCI) is often reflected in the following EEG markers:
+
+- Elevated Theta power and reduced Alpha power, especially in frontal and parietal regions
+- Suppressed Beta activity, suggesting cognitive slowing
+- Anomalies should be interpreted based on severity (e.g., Alpha ratio < 0.7), the number of affected bands, and distribution across channels
+
+⚠️ Synthetic Data Context:
+- In synthetic data, abnormalities are generated deliberately and consistently — they should be treated as *reliable evidence*
+- If two or more anomalies are present, assume they reflect a clinically significant pattern
+- Do not hesitate to classify as **MCI** when multiple bands show deviations
+
+Classification Guidance:
+- Classify as **MCI** if:
+  - Two or more abnormal EEG markers are present, or
+  - One anomaly is strong and widespread
+
+- Classify as **Control** if:
+  - All EEG ratios are within or near normal range (e.g., Alpha > 1.0), and no abnormalities are detected
+
+- Classify as **Needs clinical review** only when:
+  - One mild or borderline anomaly is present, and it's unclear whether it's significant
+
+
+EEG Summary:
+EEG Summary:
+Alpha power is within healthy range.
+Theta levels are normal.
+Theta/Alpha ratio: 0.01
+Theta/Beta ratio: 0.01
+
+
+Task:
+Based on the EEG summary above, assess the subject's cognitive status.
+
+Respond in the following format:
+Conclusion: [MCI / Control / Needs clinical review]  
+Explanation: [Concise justification referring to EEG patterns]
+
+Use confident ""MCI"" classification if multiple markers are abnormal.
+Avoid using ""review"" unless findings are ambiguous or borderline.
+","Conclusion: Control  
+Explanation: The EEG summary indicates that Alpha power is within a healthy range, and both Theta levels and the Theta/Alpha and Theta/Beta ratios are normal. There are no abnormalities detected in the EEG markers, suggesting that the subject's cognitive status is within normal limits.",Healthy,high
+trial9_Healthy,Healthy,"
+EEG-Based Ontology Reference:
+Mild Cognitive Impairment (MCI) is often reflected in the following EEG markers:
+
+- Elevated Theta power and reduced Alpha power, especially in frontal and parietal regions
+- Suppressed Beta activity, suggesting cognitive slowing
+- Anomalies should be interpreted based on severity (e.g., Alpha ratio < 0.7), the number of affected bands, and distribution across channels
+
+⚠️ Synthetic Data Context:
+- In synthetic data, abnormalities are generated deliberately and consistently — they should be treated as *reliable evidence*
+- If two or more anomalies are present, assume they reflect a clinically significant pattern
+- Do not hesitate to classify as **MCI** when multiple bands show deviations
+
+Classification Guidance:
+- Classify as **MCI** if:
+  - Two or more abnormal EEG markers are present, or
+  - One anomaly is strong and widespread
+
+- Classify as **Control** if:
+  - All EEG ratios are within or near normal range (e.g., Alpha > 1.0), and no abnormalities are detected
+
+- Classify as **Needs clinical review** only when:
+  - One mild or borderline anomaly is present, and it's unclear whether it's significant
+
+
+EEG Summary:
+EEG Summary:
+Alpha power is within healthy range.
+Theta levels are normal.
+Theta/Alpha ratio: 0.01
+Theta/Beta ratio: 0.01
+
+
+Task:
+Based on the EEG summary above, assess the subject's cognitive status.
+
+Respond in the following format:
+Conclusion: [MCI / Control / Needs clinical review]  
+Explanation: [Concise justification referring to EEG patterns]
+
+Use confident ""MCI"" classification if multiple markers are abnormal.
+Avoid using ""review"" unless findings are ambiguous or borderline.
+","Conclusion: Control  
+Explanation: The EEG summary indicates that Alpha power is within a healthy range, and both Theta levels and the Theta/Alpha and Theta/Beta ratios are normal. There are no abnormalities detected in the EEG markers, suggesting that the subject's cognitive status is within normal limits.",Healthy,high
+trial10_Healthy,Healthy,"
+EEG-Based Ontology Reference:
+Mild Cognitive Impairment (MCI) is often reflected in the following EEG markers:
+
+- Elevated Theta power and reduced Alpha power, especially in frontal and parietal regions
+- Suppressed Beta activity, suggesting cognitive slowing
+- Anomalies should be interpreted based on severity (e.g., Alpha ratio < 0.7), the number of affected bands, and distribution across channels
+
+⚠️ Synthetic Data Context:
+- In synthetic data, abnormalities are generated deliberately and consistently — they should be treated as *reliable evidence*
+- If two or more anomalies are present, assume they reflect a clinically significant pattern
+- Do not hesitate to classify as **MCI** when multiple bands show deviations
+
+Classification Guidance:
+- Classify as **MCI** if:
+  - Two or more abnormal EEG markers are present, or
+  - One anomaly is strong and widespread
+
+- Classify as **Control** if:
+  - All EEG ratios are within or near normal range (e.g., Alpha > 1.0), and no abnormalities are detected
+
+- Classify as **Needs clinical review** only when:
+  - One mild or borderline anomaly is present, and it's unclear whether it's significant
+
+
+EEG Summary:
+EEG Summary:
+Alpha power is within healthy range.
+Theta levels are normal.
+Theta/Alpha ratio: 0.01
+Theta/Beta ratio: 0.01
+
+
+Task:
+Based on the EEG summary above, assess the subject's cognitive status.
+
+Respond in the following format:
+Conclusion: [MCI / Control / Needs clinical review]  
+Explanation: [Concise justification referring to EEG patterns]
+
+Use confident ""MCI"" classification if multiple markers are abnormal.
+Avoid using ""review"" unless findings are ambiguous or borderline.
+","Conclusion: Control  
+Explanation: The EEG summary indicates that Alpha power is within a healthy range, and both Theta levels and the Theta/Alpha and Theta/Beta ratios are normal. There are no abnormalities detected in the EEG markers, suggesting that the subject's cognitive status is within normal limits.",Healthy,high
+trial11_Healthy,Healthy,"
+EEG-Based Ontology Reference:
+Mild Cognitive Impairment (MCI) is often reflected in the following EEG markers:
+
+- Elevated Theta power and reduced Alpha power, especially in frontal and parietal regions
+- Suppressed Beta activity, suggesting cognitive slowing
+- Anomalies should be interpreted based on severity (e.g., Alpha ratio < 0.7), the number of affected bands, and distribution across channels
+
+⚠️ Synthetic Data Context:
+- In synthetic data, abnormalities are generated deliberately and consistently — they should be treated as *reliable evidence*
+- If two or more anomalies are present, assume they reflect a clinically significant pattern
+- Do not hesitate to classify as **MCI** when multiple bands show deviations
+
+Classification Guidance:
+- Classify as **MCI** if:
+  - Two or more abnormal EEG markers are present, or
+  - One anomaly is strong and widespread
+
+- Classify as **Control** if:
+  - All EEG ratios are within or near normal range (e.g., Alpha > 1.0), and no abnormalities are detected
+
+- Classify as **Needs clinical review** only when:
+  - One mild or borderline anomaly is present, and it's unclear whether it's significant
+
+
+EEG Summary:
+EEG Summary:
+Alpha power is within healthy range.
+Theta levels are normal.
+Theta/Alpha ratio: 0.01
+Theta/Beta ratio: 0.01
+
+
+Task:
+Based on the EEG summary above, assess the subject's cognitive status.
+
+Respond in the following format:
+Conclusion: [MCI / Control / Needs clinical review]  
+Explanation: [Concise justification referring to EEG patterns]
+
+Use confident ""MCI"" classification if multiple markers are abnormal.
+Avoid using ""review"" unless findings are ambiguous or borderline.
+","Conclusion: Control  
+Explanation: The EEG summary indicates that Alpha power is within a healthy range, and both Theta and Theta/Alpha ratios are normal. There are no abnormalities detected in the EEG markers, and all ratios are within or near the normal range, suggesting no evidence of MCI.",Healthy,high
+trial12_Healthy,Healthy,"
+EEG-Based Ontology Reference:
+Mild Cognitive Impairment (MCI) is often reflected in the following EEG markers:
+
+- Elevated Theta power and reduced Alpha power, especially in frontal and parietal regions
+- Suppressed Beta activity, suggesting cognitive slowing
+- Anomalies should be interpreted based on severity (e.g., Alpha ratio < 0.7), the number of affected bands, and distribution across channels
+
+⚠️ Synthetic Data Context:
+- In synthetic data, abnormalities are generated deliberately and consistently — they should be treated as *reliable evidence*
+- If two or more anomalies are present, assume they reflect a clinically significant pattern
+- Do not hesitate to classify as **MCI** when multiple bands show deviations
+
+Classification Guidance:
+- Classify as **MCI** if:
+  - Two or more abnormal EEG markers are present, or
+  - One anomaly is strong and widespread
+
+- Classify as **Control** if:
+  - All EEG ratios are within or near normal range (e.g., Alpha > 1.0), and no abnormalities are detected
+
+- Classify as **Needs clinical review** only when:
+  - One mild or borderline anomaly is present, and it's unclear whether it's significant
+
+
+EEG Summary:
+EEG Summary:
+Alpha power is within healthy range.
+Theta levels are normal.
+Theta/Alpha ratio: 0.01
+Theta/Beta ratio: 0.01
+
+
+Task:
+Based on the EEG summary above, assess the subject's cognitive status.
+
+Respond in the following format:
+Conclusion: [MCI / Control / Needs clinical review]  
+Explanation: [Concise justification referring to EEG patterns]
+
+Use confident ""MCI"" classification if multiple markers are abnormal.
+Avoid using ""review"" unless findings are ambiguous or borderline.
+","Conclusion: Control  
+Explanation: The EEG summary indicates that Alpha power is within a healthy range, and both Theta levels and the Theta/Alpha and Theta/Beta ratios are normal. There are no abnormalities detected in the EEG markers, suggesting the subject's cognitive status is within normal limits.",Healthy,high
+trial13_Healthy,Healthy,"
+EEG-Based Ontology Reference:
+Mild Cognitive Impairment (MCI) is often reflected in the following EEG markers:
+
+- Elevated Theta power and reduced Alpha power, especially in frontal and parietal regions
+- Suppressed Beta activity, suggesting cognitive slowing
+- Anomalies should be interpreted based on severity (e.g., Alpha ratio < 0.7), the number of affected bands, and distribution across channels
+
+⚠️ Synthetic Data Context:
+- In synthetic data, abnormalities are generated deliberately and consistently — they should be treated as *reliable evidence*
+- If two or more anomalies are present, assume they reflect a clinically significant pattern
+- Do not hesitate to classify as **MCI** when multiple bands show deviations
+
+Classification Guidance:
+- Classify as **MCI** if:
+  - Two or more abnormal EEG markers are present, or
+  - One anomaly is strong and widespread
+
+- Classify as **Control** if:
+  - All EEG ratios are within or near normal range (e.g., Alpha > 1.0), and no abnormalities are detected
+
+- Classify as **Needs clinical review** only when:
+  - One mild or borderline anomaly is present, and it's unclear whether it's significant
+
+
+EEG Summary:
+EEG Summary:
+Alpha power is within healthy range.
+Theta levels are normal.
+Theta/Alpha ratio: 0.01
+Theta/Beta ratio: 0.01
+
+
+Task:
+Based on the EEG summary above, assess the subject's cognitive status.
+
+Respond in the following format:
+Conclusion: [MCI / Control / Needs clinical review]  
+Explanation: [Concise justification referring to EEG patterns]
+
+Use confident ""MCI"" classification if multiple markers are abnormal.
+Avoid using ""review"" unless findings are ambiguous or borderline.
+","Conclusion: Control  
+Explanation: The EEG summary indicates that Alpha power is within the healthy range, and Theta levels are normal. The Theta/Alpha and Theta/Beta ratios are both very low (0.01), suggesting no elevation in Theta power or suppression in Beta activity. There are no abnormal EEG markers present, and all ratios are within or near the normal range, supporting a classification of Control.",Healthy,high
+trial14_Healthy,Healthy,"
+EEG-Based Ontology Reference:
+Mild Cognitive Impairment (MCI) is often reflected in the following EEG markers:
+
+- Elevated Theta power and reduced Alpha power, especially in frontal and parietal regions
+- Suppressed Beta activity, suggesting cognitive slowing
+- Anomalies should be interpreted based on severity (e.g., Alpha ratio < 0.7), the number of affected bands, and distribution across channels
+
+⚠️ Synthetic Data Context:
+- In synthetic data, abnormalities are generated deliberately and consistently — they should be treated as *reliable evidence*
+- If two or more anomalies are present, assume they reflect a clinically significant pattern
+- Do not hesitate to classify as **MCI** when multiple bands show deviations
+
+Classification Guidance:
+- Classify as **MCI** if:
+  - Two or more abnormal EEG markers are present, or
+  - One anomaly is strong and widespread
+
+- Classify as **Control** if:
+  - All EEG ratios are within or near normal range (e.g., Alpha > 1.0), and no abnormalities are detected
+
+- Classify as **Needs clinical review** only when:
+  - One mild or borderline anomaly is present, and it's unclear whether it's significant
+
+
+EEG Summary:
+EEG Summary:
+Alpha power is within healthy range.
+Theta levels are normal.
+Theta/Alpha ratio: 0.01
+Theta/Beta ratio: 0.01
+
+
+Task:
+Based on the EEG summary above, assess the subject's cognitive status.
+
+Respond in the following format:
+Conclusion: [MCI / Control / Needs clinical review]  
+Explanation: [Concise justification referring to EEG patterns]
+
+Use confident ""MCI"" classification if multiple markers are abnormal.
+Avoid using ""review"" unless findings are ambiguous or borderline.
+","Conclusion: Control  
+Explanation: The EEG summary indicates that Alpha power is within a healthy range, and both Theta levels and the Theta/Alpha and Theta/Beta ratios are normal. There are no abnormalities detected in the EEG markers, suggesting the subject's cognitive status is within normal limits.",Healthy,high
+trial16_Healthy,Healthy,"
+EEG-Based Ontology Reference:
+Mild Cognitive Impairment (MCI) is often reflected in the following EEG markers:
+
+- Elevated Theta power and reduced Alpha power, especially in frontal and parietal regions
+- Suppressed Beta activity, suggesting cognitive slowing
+- Anomalies should be interpreted based on severity (e.g., Alpha ratio < 0.7), the number of affected bands, and distribution across channels
+
+⚠️ Synthetic Data Context:
+- In synthetic data, abnormalities are generated deliberately and consistently — they should be treated as *reliable evidence*
+- If two or more anomalies are present, assume they reflect a clinically significant pattern
+- Do not hesitate to classify as **MCI** when multiple bands show deviations
+
+Classification Guidance:
+- Classify as **MCI** if:
+  - Two or more abnormal EEG markers are present, or
+  - One anomaly is strong and widespread
+
+- Classify as **Control** if:
+  - All EEG ratios are within or near normal range (e.g., Alpha > 1.0), and no abnormalities are detected
+
+- Classify as **Needs clinical review** only when:
+  - One mild or borderline anomaly is present, and it's unclear whether it's significant
+
+
+EEG Summary:
+EEG Summary:
+Alpha power is within healthy range.
+Theta levels are normal.
+Theta/Alpha ratio: 0.01
+Theta/Beta ratio: 0.01
+
+
+Task:
+Based on the EEG summary above, assess the subject's cognitive status.
+
+Respond in the following format:
+Conclusion: [MCI / Control / Needs clinical review]  
+Explanation: [Concise justification referring to EEG patterns]
+
+Use confident ""MCI"" classification if multiple markers are abnormal.
+Avoid using ""review"" unless findings are ambiguous or borderline.
+","Conclusion: Control  
+Explanation: The EEG summary indicates that Alpha power is within a healthy range, and both Theta and Theta/Alpha ratios are normal. There are no abnormalities detected in the EEG markers, and all ratios are within or near the normal range, suggesting no evidence of MCI.",Healthy,high
+trial15_Healthy,Healthy,"
+EEG-Based Ontology Reference:
+Mild Cognitive Impairment (MCI) is often reflected in the following EEG markers:
+
+- Elevated Theta power and reduced Alpha power, especially in frontal and parietal regions
+- Suppressed Beta activity, suggesting cognitive slowing
+- Anomalies should be interpreted based on severity (e.g., Alpha ratio < 0.7), the number of affected bands, and distribution across channels
+
+⚠️ Synthetic Data Context:
+- In synthetic data, abnormalities are generated deliberately and consistently — they should be treated as *reliable evidence*
+- If two or more anomalies are present, assume they reflect a clinically significant pattern
+- Do not hesitate to classify as **MCI** when multiple bands show deviations
+
+Classification Guidance:
+- Classify as **MCI** if:
+  - Two or more abnormal EEG markers are present, or
+  - One anomaly is strong and widespread
+
+- Classify as **Control** if:
+  - All EEG ratios are within or near normal range (e.g., Alpha > 1.0), and no abnormalities are detected
+
+- Classify as **Needs clinical review** only when:
+  - One mild or borderline anomaly is present, and it's unclear whether it's significant
+
+
+EEG Summary:
+EEG Summary:
+Alpha power is within healthy range.
+Theta levels are normal.
+Theta/Alpha ratio: 0.01
+Theta/Beta ratio: 0.01
+
+
+Task:
+Based on the EEG summary above, assess the subject's cognitive status.
+
+Respond in the following format:
+Conclusion: [MCI / Control / Needs clinical review]  
+Explanation: [Concise justification referring to EEG patterns]
+
+Use confident ""MCI"" classification if multiple markers are abnormal.
+Avoid using ""review"" unless findings are ambiguous or borderline.
+","Conclusion: Control  
+Explanation: The EEG summary indicates that Alpha power is within the healthy range, and both Theta levels and the Theta/Alpha and Theta/Beta ratios are normal. There are no abnormalities detected in the EEG markers, suggesting that the subject's cognitive status is within the normal range.",Healthy,high
+trial17_Healthy,Healthy,"
+EEG-Based Ontology Reference:
+Mild Cognitive Impairment (MCI) is often reflected in the following EEG markers:
+
+- Elevated Theta power and reduced Alpha power, especially in frontal and parietal regions
+- Suppressed Beta activity, suggesting cognitive slowing
+- Anomalies should be interpreted based on severity (e.g., Alpha ratio < 0.7), the number of affected bands, and distribution across channels
+
+⚠️ Synthetic Data Context:
+- In synthetic data, abnormalities are generated deliberately and consistently — they should be treated as *reliable evidence*
+- If two or more anomalies are present, assume they reflect a clinically significant pattern
+- Do not hesitate to classify as **MCI** when multiple bands show deviations
+
+Classification Guidance:
+- Classify as **MCI** if:
+  - Two or more abnormal EEG markers are present, or
+  - One anomaly is strong and widespread
+
+- Classify as **Control** if:
+  - All EEG ratios are within or near normal range (e.g., Alpha > 1.0), and no abnormalities are detected
+
+- Classify as **Needs clinical review** only when:
+  - One mild or borderline anomaly is present, and it's unclear whether it's significant
+
+
+EEG Summary:
+EEG Summary:
+Alpha power is within healthy range.
+Theta levels are normal.
+Theta/Alpha ratio: 0.01
+Theta/Beta ratio: 0.01
+
+
+Task:
+Based on the EEG summary above, assess the subject's cognitive status.
+
+Respond in the following format:
+Conclusion: [MCI / Control / Needs clinical review]  
+Explanation: [Concise justification referring to EEG patterns]
+
+Use confident ""MCI"" classification if multiple markers are abnormal.
+Avoid using ""review"" unless findings are ambiguous or borderline.
+","Conclusion: Control  
+Explanation: The EEG summary indicates that Alpha power is within a healthy range, and both Theta levels and the Theta/Alpha and Theta/Beta ratios are normal. There are no abnormalities detected in the EEG markers, suggesting that the subject's cognitive status is within normal limits.",Healthy,high
+trial18_Healthy,Healthy,"
+EEG-Based Ontology Reference:
+Mild Cognitive Impairment (MCI) is often reflected in the following EEG markers:
+
+- Elevated Theta power and reduced Alpha power, especially in frontal and parietal regions
+- Suppressed Beta activity, suggesting cognitive slowing
+- Anomalies should be interpreted based on severity (e.g., Alpha ratio < 0.7), the number of affected bands, and distribution across channels
+
+⚠️ Synthetic Data Context:
+- In synthetic data, abnormalities are generated deliberately and consistently — they should be treated as *reliable evidence*
+- If two or more anomalies are present, assume they reflect a clinically significant pattern
+- Do not hesitate to classify as **MCI** when multiple bands show deviations
+
+Classification Guidance:
+- Classify as **MCI** if:
+  - Two or more abnormal EEG markers are present, or
+  - One anomaly is strong and widespread
+
+- Classify as **Control** if:
+  - All EEG ratios are within or near normal range (e.g., Alpha > 1.0), and no abnormalities are detected
+
+- Classify as **Needs clinical review** only when:
+  - One mild or borderline anomaly is present, and it's unclear whether it's significant
+
+
+EEG Summary:
+EEG Summary:
+Alpha power is within healthy range.
+Theta levels are normal.
+Theta/Alpha ratio: 0.01
+Theta/Beta ratio: 0.01
+
+
+Task:
+Based on the EEG summary above, assess the subject's cognitive status.
+
+Respond in the following format:
+Conclusion: [MCI / Control / Needs clinical review]  
+Explanation: [Concise justification referring to EEG patterns]
+
+Use confident ""MCI"" classification if multiple markers are abnormal.
+Avoid using ""review"" unless findings are ambiguous or borderline.
+","Conclusion: Control  
+Explanation: The EEG summary indicates that Alpha power is within a healthy range, and both Theta and Theta/Alpha ratios are normal. There are no abnormalities detected in the EEG markers, and all ratios are within or near the normal range, suggesting no evidence of MCI.",Healthy,high
+trial19_Healthy,Healthy,"
+EEG-Based Ontology Reference:
+Mild Cognitive Impairment (MCI) is often reflected in the following EEG markers:
+
+- Elevated Theta power and reduced Alpha power, especially in frontal and parietal regions
+- Suppressed Beta activity, suggesting cognitive slowing
+- Anomalies should be interpreted based on severity (e.g., Alpha ratio < 0.7), the number of affected bands, and distribution across channels
+
+⚠️ Synthetic Data Context:
+- In synthetic data, abnormalities are generated deliberately and consistently — they should be treated as *reliable evidence*
+- If two or more anomalies are present, assume they reflect a clinically significant pattern
+- Do not hesitate to classify as **MCI** when multiple bands show deviations
+
+Classification Guidance:
+- Classify as **MCI** if:
+  - Two or more abnormal EEG markers are present, or
+  - One anomaly is strong and widespread
+
+- Classify as **Control** if:
+  - All EEG ratios are within or near normal range (e.g., Alpha > 1.0), and no abnormalities are detected
+
+- Classify as **Needs clinical review** only when:
+  - One mild or borderline anomaly is present, and it's unclear whether it's significant
+
+
+EEG Summary:
+EEG Summary:
+Alpha power is within healthy range.
+Theta levels are normal.
+Theta/Alpha ratio: 0.01
+Theta/Beta ratio: 0.01
+
+
+Task:
+Based on the EEG summary above, assess the subject's cognitive status.
+
+Respond in the following format:
+Conclusion: [MCI / Control / Needs clinical review]  
+Explanation: [Concise justification referring to EEG patterns]
+
+Use confident ""MCI"" classification if multiple markers are abnormal.
+Avoid using ""review"" unless findings are ambiguous or borderline.
+","Conclusion: Control  
+Explanation: The EEG summary indicates that Alpha power is within the healthy range, and both Theta levels and the Theta/Alpha and Theta/Beta ratios are normal. There are no abnormalities detected in the EEG markers, suggesting that the subject's cognitive status is within the normal range.",Healthy,high
+trial20_Healthy,Healthy,"
+EEG-Based Ontology Reference:
+Mild Cognitive Impairment (MCI) is often reflected in the following EEG markers:
+
+- Elevated Theta power and reduced Alpha power, especially in frontal and parietal regions
+- Suppressed Beta activity, suggesting cognitive slowing
+- Anomalies should be interpreted based on severity (e.g., Alpha ratio < 0.7), the number of affected bands, and distribution across channels
+
+⚠️ Synthetic Data Context:
+- In synthetic data, abnormalities are generated deliberately and consistently — they should be treated as *reliable evidence*
+- If two or more anomalies are present, assume they reflect a clinically significant pattern
+- Do not hesitate to classify as **MCI** when multiple bands show deviations
+
+Classification Guidance:
+- Classify as **MCI** if:
+  - Two or more abnormal EEG markers are present, or
+  - One anomaly is strong and widespread
+
+- Classify as **Control** if:
+  - All EEG ratios are within or near normal range (e.g., Alpha > 1.0), and no abnormalities are detected
+
+- Classify as **Needs clinical review** only when:
+  - One mild or borderline anomaly is present, and it's unclear whether it's significant
+
+
+EEG Summary:
+EEG Summary:
+Alpha power is within healthy range.
+Theta levels are normal.
+Theta/Alpha ratio: 0.01
+Theta/Beta ratio: 0.01
+
+
+Task:
+Based on the EEG summary above, assess the subject's cognitive status.
+
+Respond in the following format:
+Conclusion: [MCI / Control / Needs clinical review]  
+Explanation: [Concise justification referring to EEG patterns]
+
+Use confident ""MCI"" classification if multiple markers are abnormal.
+Avoid using ""review"" unless findings are ambiguous or borderline.
+","Conclusion: Control  
+Explanation: The EEG summary indicates that Alpha power is within a healthy range, and both Theta levels and the Theta/Alpha and Theta/Beta ratios are normal. There are no abnormalities detected in the EEG markers, suggesting the subject's cognitive status is within normal limits.",Healthy,high
+trial21_Healthy,Healthy,"
+EEG-Based Ontology Reference:
+Mild Cognitive Impairment (MCI) is often reflected in the following EEG markers:
+
+- Elevated Theta power and reduced Alpha power, especially in frontal and parietal regions
+- Suppressed Beta activity, suggesting cognitive slowing
+- Anomalies should be interpreted based on severity (e.g., Alpha ratio < 0.7), the number of affected bands, and distribution across channels
+
+⚠️ Synthetic Data Context:
+- In synthetic data, abnormalities are generated deliberately and consistently — they should be treated as *reliable evidence*
+- If two or more anomalies are present, assume they reflect a clinically significant pattern
+- Do not hesitate to classify as **MCI** when multiple bands show deviations
+
+Classification Guidance:
+- Classify as **MCI** if:
+  - Two or more abnormal EEG markers are present, or
+  - One anomaly is strong and widespread
+
+- Classify as **Control** if:
+  - All EEG ratios are within or near normal range (e.g., Alpha > 1.0), and no abnormalities are detected
+
+- Classify as **Needs clinical review** only when:
+  - One mild or borderline anomaly is present, and it's unclear whether it's significant
+
+
+EEG Summary:
+EEG Summary:
+Alpha power is within healthy range.
+Theta levels are normal.
+Theta/Alpha ratio: 0.01
+Theta/Beta ratio: 0.01
+
+
+Task:
+Based on the EEG summary above, assess the subject's cognitive status.
+
+Respond in the following format:
+Conclusion: [MCI / Control / Needs clinical review]  
+Explanation: [Concise justification referring to EEG patterns]
+
+Use confident ""MCI"" classification if multiple markers are abnormal.
+Avoid using ""review"" unless findings are ambiguous or borderline.
+","Conclusion: Control  
+Explanation: The EEG summary indicates that Alpha power is within a healthy range, and both Theta levels and the Theta/Alpha and Theta/Beta ratios are normal. There are no abnormalities detected in the EEG markers, suggesting the subject's cognitive status is within normal limits.",Healthy,high
+trial22_Healthy,Healthy,"
+EEG-Based Ontology Reference:
+Mild Cognitive Impairment (MCI) is often reflected in the following EEG markers:
+
+- Elevated Theta power and reduced Alpha power, especially in frontal and parietal regions
+- Suppressed Beta activity, suggesting cognitive slowing
+- Anomalies should be interpreted based on severity (e.g., Alpha ratio < 0.7), the number of affected bands, and distribution across channels
+
+⚠️ Synthetic Data Context:
+- In synthetic data, abnormalities are generated deliberately and consistently — they should be treated as *reliable evidence*
+- If two or more anomalies are present, assume they reflect a clinically significant pattern
+- Do not hesitate to classify as **MCI** when multiple bands show deviations
+
+Classification Guidance:
+- Classify as **MCI** if:
+  - Two or more abnormal EEG markers are present, or
+  - One anomaly is strong and widespread
+
+- Classify as **Control** if:
+  - All EEG ratios are within or near normal range (e.g., Alpha > 1.0), and no abnormalities are detected
+
+- Classify as **Needs clinical review** only when:
+  - One mild or borderline anomaly is present, and it's unclear whether it's significant
+
+
+EEG Summary:
+EEG Summary:
+Alpha power is within healthy range.
+Theta levels are normal.
+Theta/Alpha ratio: 0.01
+Theta/Beta ratio: 0.01
+
+
+Task:
+Based on the EEG summary above, assess the subject's cognitive status.
+
+Respond in the following format:
+Conclusion: [MCI / Control / Needs clinical review]  
+Explanation: [Concise justification referring to EEG patterns]
+
+Use confident ""MCI"" classification if multiple markers are abnormal.
+Avoid using ""review"" unless findings are ambiguous or borderline.
+","Conclusion: Control  
+Explanation: The EEG summary indicates that Alpha power is within a healthy range, and both Theta and Theta/Alpha ratios are normal. There are no abnormalities detected in the EEG markers, and all ratios are within or near the normal range, suggesting no evidence of MCI.",Healthy,high
+trial23_Healthy,Healthy,"
+EEG-Based Ontology Reference:
+Mild Cognitive Impairment (MCI) is often reflected in the following EEG markers:
+
+- Elevated Theta power and reduced Alpha power, especially in frontal and parietal regions
+- Suppressed Beta activity, suggesting cognitive slowing
+- Anomalies should be interpreted based on severity (e.g., Alpha ratio < 0.7), the number of affected bands, and distribution across channels
+
+⚠️ Synthetic Data Context:
+- In synthetic data, abnormalities are generated deliberately and consistently — they should be treated as *reliable evidence*
+- If two or more anomalies are present, assume they reflect a clinically significant pattern
+- Do not hesitate to classify as **MCI** when multiple bands show deviations
+
+Classification Guidance:
+- Classify as **MCI** if:
+  - Two or more abnormal EEG markers are present, or
+  - One anomaly is strong and widespread
+
+- Classify as **Control** if:
+  - All EEG ratios are within or near normal range (e.g., Alpha > 1.0), and no abnormalities are detected
+
+- Classify as **Needs clinical review** only when:
+  - One mild or borderline anomaly is present, and it's unclear whether it's significant
+
+
+EEG Summary:
+EEG Summary:
+Alpha power is within healthy range.
+Theta levels are normal.
+Theta/Alpha ratio: 0.01
+Theta/Beta ratio: 0.01
+
+
+Task:
+Based on the EEG summary above, assess the subject's cognitive status.
+
+Respond in the following format:
+Conclusion: [MCI / Control / Needs clinical review]  
+Explanation: [Concise justification referring to EEG patterns]
+
+Use confident ""MCI"" classification if multiple markers are abnormal.
+Avoid using ""review"" unless findings are ambiguous or borderline.
+","Conclusion: Control  
+Explanation: The EEG summary indicates that Alpha power is within a healthy range, and both Theta levels and the Theta/Alpha and Theta/Beta ratios are normal. There are no abnormalities detected in the EEG markers, suggesting that the subject's cognitive status is within normal limits.",Healthy,high
+trial24_Healthy,Healthy,"
+EEG-Based Ontology Reference:
+Mild Cognitive Impairment (MCI) is often reflected in the following EEG markers:
+
+- Elevated Theta power and reduced Alpha power, especially in frontal and parietal regions
+- Suppressed Beta activity, suggesting cognitive slowing
+- Anomalies should be interpreted based on severity (e.g., Alpha ratio < 0.7), the number of affected bands, and distribution across channels
+
+⚠️ Synthetic Data Context:
+- In synthetic data, abnormalities are generated deliberately and consistently — they should be treated as *reliable evidence*
+- If two or more anomalies are present, assume they reflect a clinically significant pattern
+- Do not hesitate to classify as **MCI** when multiple bands show deviations
+
+Classification Guidance:
+- Classify as **MCI** if:
+  - Two or more abnormal EEG markers are present, or
+  - One anomaly is strong and widespread
+
+- Classify as **Control** if:
+  - All EEG ratios are within or near normal range (e.g., Alpha > 1.0), and no abnormalities are detected
+
+- Classify as **Needs clinical review** only when:
+  - One mild or borderline anomaly is present, and it's unclear whether it's significant
+
+
+EEG Summary:
+EEG Summary:
+Alpha power is within healthy range.
+Theta levels are normal.
+Theta/Alpha ratio: 0.01
+Theta/Beta ratio: 0.01
+
+
+Task:
+Based on the EEG summary above, assess the subject's cognitive status.
+
+Respond in the following format:
+Conclusion: [MCI / Control / Needs clinical review]  
+Explanation: [Concise justification referring to EEG patterns]
+
+Use confident ""MCI"" classification if multiple markers are abnormal.
+Avoid using ""review"" unless findings are ambiguous or borderline.
+","Conclusion: Control  
+Explanation: The EEG summary indicates that Alpha power is within a healthy range, and both Theta levels and the Theta/Alpha and Theta/Beta ratios are normal. There are no abnormalities detected in the EEG markers, suggesting that the subject's cognitive status is within normal limits.",Healthy,high
+trial25_Healthy,Healthy,"
+EEG-Based Ontology Reference:
+Mild Cognitive Impairment (MCI) is often reflected in the following EEG markers:
+
+- Elevated Theta power and reduced Alpha power, especially in frontal and parietal regions
+- Suppressed Beta activity, suggesting cognitive slowing
+- Anomalies should be interpreted based on severity (e.g., Alpha ratio < 0.7), the number of affected bands, and distribution across channels
+
+⚠️ Synthetic Data Context:
+- In synthetic data, abnormalities are generated deliberately and consistently — they should be treated as *reliable evidence*
+- If two or more anomalies are present, assume they reflect a clinically significant pattern
+- Do not hesitate to classify as **MCI** when multiple bands show deviations
+
+Classification Guidance:
+- Classify as **MCI** if:
+  - Two or more abnormal EEG markers are present, or
+  - One anomaly is strong and widespread
+
+- Classify as **Control** if:
+  - All EEG ratios are within or near normal range (e.g., Alpha > 1.0), and no abnormalities are detected
+
+- Classify as **Needs clinical review** only when:
+  - One mild or borderline anomaly is present, and it's unclear whether it's significant
+
+
+EEG Summary:
+EEG Summary:
+Alpha power is within healthy range.
+Theta levels are normal.
+Theta/Alpha ratio: 0.01
+Theta/Beta ratio: 0.01
+
+
+Task:
+Based on the EEG summary above, assess the subject's cognitive status.
+
+Respond in the following format:
+Conclusion: [MCI / Control / Needs clinical review]  
+Explanation: [Concise justification referring to EEG patterns]
+
+Use confident ""MCI"" classification if multiple markers are abnormal.
+Avoid using ""review"" unless findings are ambiguous or borderline.
+","Conclusion: Control  
+Explanation: The EEG summary indicates that Alpha power is within a healthy range, and both Theta levels and the Theta/Alpha and Theta/Beta ratios are normal. There are no abnormalities detected in the EEG markers, suggesting the subject's cognitive status is within normal limits.",Healthy,high
+trial3_MCI,MCI,"
+EEG-Based Ontology Reference:
+Mild Cognitive Impairment (MCI) is often reflected in the following EEG markers:
+
+- Elevated Theta power and reduced Alpha power, especially in frontal and parietal regions
+- Suppressed Beta activity, suggesting cognitive slowing
+- Anomalies should be interpreted based on severity (e.g., Alpha ratio < 0.7), the number of affected bands, and distribution across channels
+
+⚠️ Synthetic Data Context:
+- In synthetic data, abnormalities are generated deliberately and consistently — they should be treated as *reliable evidence*
+- If two or more anomalies are present, assume they reflect a clinically significant pattern
+- Do not hesitate to classify as **MCI** when multiple bands show deviations
+
+Classification Guidance:
+- Classify as **MCI** if:
+  - Two or more abnormal EEG markers are present, or
+  - One anomaly is strong and widespread
+
+- Classify as **Control** if:
+  - All EEG ratios are within or near normal range (e.g., Alpha > 1.0), and no abnormalities are detected
+
+- Classify as **Needs clinical review** only when:
+  - One mild or borderline anomaly is present, and it's unclear whether it's significant
+
+
+EEG Summary:
+EEG Summary:
+Alpha power is globally reduced.
+Theta levels are normal.
+Theta/Alpha ratio: 3.07
+Theta/Beta ratio: 0.71
+
+
+Task:
+Based on the EEG summary above, assess the subject's cognitive status.
+
+Respond in the following format:
+Conclusion: [MCI / Control / Needs clinical review]  
+Explanation: [Concise justification referring to EEG patterns]
+
+Use confident ""MCI"" classification if multiple markers are abnormal.
+Avoid using ""review"" unless findings are ambiguous or borderline.
+","Conclusion: MCI  
+Explanation: The EEG summary indicates a globally reduced Alpha power, which is a significant marker for MCI. Although Theta levels are normal, the elevated Theta/Alpha ratio of 3.07 suggests a notable imbalance, further supporting the presence of cognitive impairment. The combination of these abnormalities aligns with the criteria for classifying as MCI, given the presence of multiple abnormal EEG markers.",MCI,high
+trial2_MCI,MCI,"
+EEG-Based Ontology Reference:
+Mild Cognitive Impairment (MCI) is often reflected in the following EEG markers:
+
+- Elevated Theta power and reduced Alpha power, especially in frontal and parietal regions
+- Suppressed Beta activity, suggesting cognitive slowing
+- Anomalies should be interpreted based on severity (e.g., Alpha ratio < 0.7), the number of affected bands, and distribution across channels
+
+⚠️ Synthetic Data Context:
+- In synthetic data, abnormalities are generated deliberately and consistently — they should be treated as *reliable evidence*
+- If two or more anomalies are present, assume they reflect a clinically significant pattern
+- Do not hesitate to classify as **MCI** when multiple bands show deviations
+
+Classification Guidance:
+- Classify as **MCI** if:
+  - Two or more abnormal EEG markers are present, or
+  - One anomaly is strong and widespread
+
+- Classify as **Control** if:
+  - All EEG ratios are within or near normal range (e.g., Alpha > 1.0), and no abnormalities are detected
+
+- Classify as **Needs clinical review** only when:
+  - One mild or borderline anomaly is present, and it's unclear whether it's significant
+
+
+EEG Summary:
+EEG Summary:
+Alpha power is globally reduced.
+Theta levels are normal.
+Theta/Alpha ratio: 3.00
+Theta/Beta ratio: 0.72
+
+
+Task:
+Based on the EEG summary above, assess the subject's cognitive status.
+
+Respond in the following format:
+Conclusion: [MCI / Control / Needs clinical review]  
+Explanation: [Concise justification referring to EEG patterns]
+
+Use confident ""MCI"" classification if multiple markers are abnormal.
+Avoid using ""review"" unless findings are ambiguous or borderline.
+","Conclusion: MCI  
+Explanation: The EEG summary indicates a globally reduced Alpha power, which is a significant marker for MCI. Although Theta levels are normal, the elevated Theta/Alpha ratio of 3.00 suggests a substantial deviation from normal patterns, reinforcing the presence of cognitive impairment. The combination of these two abnormal markers (reduced Alpha power and elevated Theta/Alpha ratio) aligns with the criteria for classifying as MCI.",MCI,high
+trial4_MCI,MCI,"
+EEG-Based Ontology Reference:
+Mild Cognitive Impairment (MCI) is often reflected in the following EEG markers:
+
+- Elevated Theta power and reduced Alpha power, especially in frontal and parietal regions
+- Suppressed Beta activity, suggesting cognitive slowing
+- Anomalies should be interpreted based on severity (e.g., Alpha ratio < 0.7), the number of affected bands, and distribution across channels
+
+⚠️ Synthetic Data Context:
+- In synthetic data, abnormalities are generated deliberately and consistently — they should be treated as *reliable evidence*
+- If two or more anomalies are present, assume they reflect a clinically significant pattern
+- Do not hesitate to classify as **MCI** when multiple bands show deviations
+
+Classification Guidance:
+- Classify as **MCI** if:
+  - Two or more abnormal EEG markers are present, or
+  - One anomaly is strong and widespread
+
+- Classify as **Control** if:
+  - All EEG ratios are within or near normal range (e.g., Alpha > 1.0), and no abnormalities are detected
+
+- Classify as **Needs clinical review** only when:
+  - One mild or borderline anomaly is present, and it's unclear whether it's significant
+
+
+EEG Summary:
+EEG Summary:
+Alpha power is globally reduced.
+Theta levels are normal.
+Theta/Alpha ratio: 3.02
+Theta/Beta ratio: 0.72
+
+
+Task:
+Based on the EEG summary above, assess the subject's cognitive status.
+
+Respond in the following format:
+Conclusion: [MCI / Control / Needs clinical review]  
+Explanation: [Concise justification referring to EEG patterns]
+
+Use confident ""MCI"" classification if multiple markers are abnormal.
+Avoid using ""review"" unless findings are ambiguous or borderline.
+","Conclusion: MCI  
+Explanation: The EEG summary indicates a globally reduced Alpha power, which is a significant marker for MCI. Although Theta levels are normal, the elevated Theta/Alpha ratio of 3.02 suggests a notable imbalance, further supporting the presence of cognitive impairment. The combination of these abnormalities in the EEG patterns aligns with the criteria for classifying as MCI, given the presence of multiple abnormal markers.",MCI,high
+trial1_MCI,MCI,"
+EEG-Based Ontology Reference:
+Mild Cognitive Impairment (MCI) is often reflected in the following EEG markers:
+
+- Elevated Theta power and reduced Alpha power, especially in frontal and parietal regions
+- Suppressed Beta activity, suggesting cognitive slowing
+- Anomalies should be interpreted based on severity (e.g., Alpha ratio < 0.7), the number of affected bands, and distribution across channels
+
+⚠️ Synthetic Data Context:
+- In synthetic data, abnormalities are generated deliberately and consistently — they should be treated as *reliable evidence*
+- If two or more anomalies are present, assume they reflect a clinically significant pattern
+- Do not hesitate to classify as **MCI** when multiple bands show deviations
+
+Classification Guidance:
+- Classify as **MCI** if:
+  - Two or more abnormal EEG markers are present, or
+  - One anomaly is strong and widespread
+
+- Classify as **Control** if:
+  - All EEG ratios are within or near normal range (e.g., Alpha > 1.0), and no abnormalities are detected
+
+- Classify as **Needs clinical review** only when:
+  - One mild or borderline anomaly is present, and it's unclear whether it's significant
+
+
+EEG Summary:
+EEG Summary:
+Alpha power is globally reduced.
+Theta levels are normal.
+Theta/Alpha ratio: 3.18
+Theta/Beta ratio: 0.73
+
+
+Task:
+Based on the EEG summary above, assess the subject's cognitive status.
+
+Respond in the following format:
+Conclusion: [MCI / Control / Needs clinical review]  
+Explanation: [Concise justification referring to EEG patterns]
+
+Use confident ""MCI"" classification if multiple markers are abnormal.
+Avoid using ""review"" unless findings are ambiguous or borderline.
+","Conclusion: MCI  
+Explanation: The EEG summary indicates globally reduced Alpha power, which is a significant marker for MCI. Additionally, the Theta/Alpha ratio is elevated at 3.18, further supporting the presence of cognitive impairment. Although Theta levels are normal, the combination of reduced Alpha power and an elevated Theta/Alpha ratio constitutes multiple abnormal EEG markers, justifying a confident classification of MCI.",MCI,high
+trial6_MCI,MCI,"
+EEG-Based Ontology Reference:
+Mild Cognitive Impairment (MCI) is often reflected in the following EEG markers:
+
+- Elevated Theta power and reduced Alpha power, especially in frontal and parietal regions
+- Suppressed Beta activity, suggesting cognitive slowing
+- Anomalies should be interpreted based on severity (e.g., Alpha ratio < 0.7), the number of affected bands, and distribution across channels
+
+⚠️ Synthetic Data Context:
+- In synthetic data, abnormalities are generated deliberately and consistently — they should be treated as *reliable evidence*
+- If two or more anomalies are present, assume they reflect a clinically significant pattern
+- Do not hesitate to classify as **MCI** when multiple bands show deviations
+
+Classification Guidance:
+- Classify as **MCI** if:
+  - Two or more abnormal EEG markers are present, or
+  - One anomaly is strong and widespread
+
+- Classify as **Control** if:
+  - All EEG ratios are within or near normal range (e.g., Alpha > 1.0), and no abnormalities are detected
+
+- Classify as **Needs clinical review** only when:
+  - One mild or borderline anomaly is present, and it's unclear whether it's significant
+
+
+EEG Summary:
+EEG Summary:
+Alpha power is globally reduced.
+Theta levels are normal.
+Theta/Alpha ratio: 3.14
+Theta/Beta ratio: 0.72
+
+
+Task:
+Based on the EEG summary above, assess the subject's cognitive status.
+
+Respond in the following format:
+Conclusion: [MCI / Control / Needs clinical review]  
+Explanation: [Concise justification referring to EEG patterns]
+
+Use confident ""MCI"" classification if multiple markers are abnormal.
+Avoid using ""review"" unless findings are ambiguous or borderline.
+","Conclusion: MCI  
+Explanation: The EEG summary indicates a globally reduced Alpha power, which is a significant marker for MCI. Additionally, the Theta/Alpha ratio is elevated at 3.14, further supporting the presence of cognitive impairment. Although Theta levels are normal, the combination of reduced Alpha power and an elevated Theta/Alpha ratio constitutes two abnormal EEG markers, justifying a confident classification of MCI.",MCI,high
+trial5_MCI,MCI,"
+EEG-Based Ontology Reference:
+Mild Cognitive Impairment (MCI) is often reflected in the following EEG markers:
+
+- Elevated Theta power and reduced Alpha power, especially in frontal and parietal regions
+- Suppressed Beta activity, suggesting cognitive slowing
+- Anomalies should be interpreted based on severity (e.g., Alpha ratio < 0.7), the number of affected bands, and distribution across channels
+
+⚠️ Synthetic Data Context:
+- In synthetic data, abnormalities are generated deliberately and consistently — they should be treated as *reliable evidence*
+- If two or more anomalies are present, assume they reflect a clinically significant pattern
+- Do not hesitate to classify as **MCI** when multiple bands show deviations
+
+Classification Guidance:
+- Classify as **MCI** if:
+  - Two or more abnormal EEG markers are present, or
+  - One anomaly is strong and widespread
+
+- Classify as **Control** if:
+  - All EEG ratios are within or near normal range (e.g., Alpha > 1.0), and no abnormalities are detected
+
+- Classify as **Needs clinical review** only when:
+  - One mild or borderline anomaly is present, and it's unclear whether it's significant
+
+
+EEG Summary:
+EEG Summary:
+Alpha power is globally reduced.
+Theta levels are normal.
+Theta/Alpha ratio: 3.15
+Theta/Beta ratio: 0.70
+
+
+Task:
+Based on the EEG summary above, assess the subject's cognitive status.
+
+Respond in the following format:
+Conclusion: [MCI / Control / Needs clinical review]  
+Explanation: [Concise justification referring to EEG patterns]
+
+Use confident ""MCI"" classification if multiple markers are abnormal.
+Avoid using ""review"" unless findings are ambiguous or borderline.
+","Conclusion: MCI  
+Explanation: The EEG summary indicates globally reduced Alpha power, which is a significant marker for MCI. Additionally, the Theta/Alpha ratio is elevated at 3.15, further supporting the presence of cognitive impairment. These two abnormal markers suggest a clinically significant pattern consistent with MCI.",MCI,high
+trial7_MCI,MCI,"
+EEG-Based Ontology Reference:
+Mild Cognitive Impairment (MCI) is often reflected in the following EEG markers:
+
+- Elevated Theta power and reduced Alpha power, especially in frontal and parietal regions
+- Suppressed Beta activity, suggesting cognitive slowing
+- Anomalies should be interpreted based on severity (e.g., Alpha ratio < 0.7), the number of affected bands, and distribution across channels
+
+⚠️ Synthetic Data Context:
+- In synthetic data, abnormalities are generated deliberately and consistently — they should be treated as *reliable evidence*
+- If two or more anomalies are present, assume they reflect a clinically significant pattern
+- Do not hesitate to classify as **MCI** when multiple bands show deviations
+
+Classification Guidance:
+- Classify as **MCI** if:
+  - Two or more abnormal EEG markers are present, or
+  - One anomaly is strong and widespread
+
+- Classify as **Control** if:
+  - All EEG ratios are within or near normal range (e.g., Alpha > 1.0), and no abnormalities are detected
+
+- Classify as **Needs clinical review** only when:
+  - One mild or borderline anomaly is present, and it's unclear whether it's significant
+
+
+EEG Summary:
+EEG Summary:
+Alpha power is globally reduced.
+Theta levels are normal.
+Theta/Alpha ratio: 3.14
+Theta/Beta ratio: 0.73
+
+
+Task:
+Based on the EEG summary above, assess the subject's cognitive status.
+
+Respond in the following format:
+Conclusion: [MCI / Control / Needs clinical review]  
+Explanation: [Concise justification referring to EEG patterns]
+
+Use confident ""MCI"" classification if multiple markers are abnormal.
+Avoid using ""review"" unless findings are ambiguous or borderline.
+","Conclusion: MCI  
+Explanation: The EEG summary indicates a globally reduced Alpha power, which is a significant marker for MCI. Additionally, the Theta/Alpha ratio is elevated at 3.14, further supporting the presence of cognitive impairment. Although Theta levels are normal, the combination of reduced Alpha power and an elevated Theta/Alpha ratio constitutes two abnormal EEG markers, justifying a confident classification of MCI.",MCI,high
+trial8_MCI,MCI,"
+EEG-Based Ontology Reference:
+Mild Cognitive Impairment (MCI) is often reflected in the following EEG markers:
+
+- Elevated Theta power and reduced Alpha power, especially in frontal and parietal regions
+- Suppressed Beta activity, suggesting cognitive slowing
+- Anomalies should be interpreted based on severity (e.g., Alpha ratio < 0.7), the number of affected bands, and distribution across channels
+
+⚠️ Synthetic Data Context:
+- In synthetic data, abnormalities are generated deliberately and consistently — they should be treated as *reliable evidence*
+- If two or more anomalies are present, assume they reflect a clinically significant pattern
+- Do not hesitate to classify as **MCI** when multiple bands show deviations
+
+Classification Guidance:
+- Classify as **MCI** if:
+  - Two or more abnormal EEG markers are present, or
+  - One anomaly is strong and widespread
+
+- Classify as **Control** if:
+  - All EEG ratios are within or near normal range (e.g., Alpha > 1.0), and no abnormalities are detected
+
+- Classify as **Needs clinical review** only when:
+  - One mild or borderline anomaly is present, and it's unclear whether it's significant
+
+
+EEG Summary:
+EEG Summary:
+Alpha power is globally reduced.
+Theta levels are normal.
+Theta/Alpha ratio: 3.01
+Theta/Beta ratio: 0.70
+
+
+Task:
+Based on the EEG summary above, assess the subject's cognitive status.
+
+Respond in the following format:
+Conclusion: [MCI / Control / Needs clinical review]  
+Explanation: [Concise justification referring to EEG patterns]
+
+Use confident ""MCI"" classification if multiple markers are abnormal.
+Avoid using ""review"" unless findings are ambiguous or borderline.
+","Conclusion: MCI  
+Explanation: The EEG summary indicates a globally reduced Alpha power, which is a significant marker for MCI. Although Theta levels are normal, the elevated Theta/Alpha ratio of 3.01 suggests a notable imbalance, further supporting the presence of cognitive impairment. The combination of these abnormalities aligns with the criteria for classifying as MCI, given the presence of multiple abnormal EEG markers.",MCI,high
+trial9_MCI,MCI,"
+EEG-Based Ontology Reference:
+Mild Cognitive Impairment (MCI) is often reflected in the following EEG markers:
+
+- Elevated Theta power and reduced Alpha power, especially in frontal and parietal regions
+- Suppressed Beta activity, suggesting cognitive slowing
+- Anomalies should be interpreted based on severity (e.g., Alpha ratio < 0.7), the number of affected bands, and distribution across channels
+
+⚠️ Synthetic Data Context:
+- In synthetic data, abnormalities are generated deliberately and consistently — they should be treated as *reliable evidence*
+- If two or more anomalies are present, assume they reflect a clinically significant pattern
+- Do not hesitate to classify as **MCI** when multiple bands show deviations
+
+Classification Guidance:
+- Classify as **MCI** if:
+  - Two or more abnormal EEG markers are present, or
+  - One anomaly is strong and widespread
+
+- Classify as **Control** if:
+  - All EEG ratios are within or near normal range (e.g., Alpha > 1.0), and no abnormalities are detected
+
+- Classify as **Needs clinical review** only when:
+  - One mild or borderline anomaly is present, and it's unclear whether it's significant
+
+
+EEG Summary:
+EEG Summary:
+Alpha power is globally reduced.
+Theta levels are normal.
+Theta/Alpha ratio: 3.15
+Theta/Beta ratio: 0.73
+
+
+Task:
+Based on the EEG summary above, assess the subject's cognitive status.
+
+Respond in the following format:
+Conclusion: [MCI / Control / Needs clinical review]  
+Explanation: [Concise justification referring to EEG patterns]
+
+Use confident ""MCI"" classification if multiple markers are abnormal.
+Avoid using ""review"" unless findings are ambiguous or borderline.
+","Conclusion: MCI  
+Explanation: The EEG summary indicates a globally reduced Alpha power, which is a significant marker for MCI. Although Theta levels are normal, the elevated Theta/Alpha ratio of 3.15 suggests a deviation from normal patterns, reinforcing the presence of cognitive impairment. The combination of these abnormalities, particularly the reduced Alpha power and the elevated Theta/Alpha ratio, supports a confident classification of MCI.",MCI,high
+trial10_MCI,MCI,"
+EEG-Based Ontology Reference:
+Mild Cognitive Impairment (MCI) is often reflected in the following EEG markers:
+
+- Elevated Theta power and reduced Alpha power, especially in frontal and parietal regions
+- Suppressed Beta activity, suggesting cognitive slowing
+- Anomalies should be interpreted based on severity (e.g., Alpha ratio < 0.7), the number of affected bands, and distribution across channels
+
+⚠️ Synthetic Data Context:
+- In synthetic data, abnormalities are generated deliberately and consistently — they should be treated as *reliable evidence*
+- If two or more anomalies are present, assume they reflect a clinically significant pattern
+- Do not hesitate to classify as **MCI** when multiple bands show deviations
+
+Classification Guidance:
+- Classify as **MCI** if:
+  - Two or more abnormal EEG markers are present, or
+  - One anomaly is strong and widespread
+
+- Classify as **Control** if:
+  - All EEG ratios are within or near normal range (e.g., Alpha > 1.0), and no abnormalities are detected
+
+- Classify as **Needs clinical review** only when:
+  - One mild or borderline anomaly is present, and it's unclear whether it's significant
+
+
+EEG Summary:
+EEG Summary:
+Alpha power is globally reduced.
+Theta levels are normal.
+Theta/Alpha ratio: 3.23
+Theta/Beta ratio: 0.72
+
+
+Task:
+Based on the EEG summary above, assess the subject's cognitive status.
+
+Respond in the following format:
+Conclusion: [MCI / Control / Needs clinical review]  
+Explanation: [Concise justification referring to EEG patterns]
+
+Use confident ""MCI"" classification if multiple markers are abnormal.
+Avoid using ""review"" unless findings are ambiguous or borderline.
+","Conclusion: MCI  
+Explanation: The EEG summary indicates a globally reduced Alpha power, which is a significant marker for MCI. Additionally, the Theta/Alpha ratio is elevated at 3.23, further supporting the presence of cognitive impairment. Although Theta levels are normal, the combination of reduced Alpha power and an elevated Theta/Alpha ratio suggests multiple abnormal EEG markers, warranting a confident classification of MCI.",MCI,high
+trial11_MCI,MCI,"
+EEG-Based Ontology Reference:
+Mild Cognitive Impairment (MCI) is often reflected in the following EEG markers:
+
+- Elevated Theta power and reduced Alpha power, especially in frontal and parietal regions
+- Suppressed Beta activity, suggesting cognitive slowing
+- Anomalies should be interpreted based on severity (e.g., Alpha ratio < 0.7), the number of affected bands, and distribution across channels
+
+⚠️ Synthetic Data Context:
+- In synthetic data, abnormalities are generated deliberately and consistently — they should be treated as *reliable evidence*
+- If two or more anomalies are present, assume they reflect a clinically significant pattern
+- Do not hesitate to classify as **MCI** when multiple bands show deviations
+
+Classification Guidance:
+- Classify as **MCI** if:
+  - Two or more abnormal EEG markers are present, or
+  - One anomaly is strong and widespread
+
+- Classify as **Control** if:
+  - All EEG ratios are within or near normal range (e.g., Alpha > 1.0), and no abnormalities are detected
+
+- Classify as **Needs clinical review** only when:
+  - One mild or borderline anomaly is present, and it's unclear whether it's significant
+
+
+EEG Summary:
+EEG Summary:
+Alpha power is globally reduced.
+Theta levels are normal.
+Theta/Alpha ratio: 3.01
+Theta/Beta ratio: 0.71
+
+
+Task:
+Based on the EEG summary above, assess the subject's cognitive status.
+
+Respond in the following format:
+Conclusion: [MCI / Control / Needs clinical review]  
+Explanation: [Concise justification referring to EEG patterns]
+
+Use confident ""MCI"" classification if multiple markers are abnormal.
+Avoid using ""review"" unless findings are ambiguous or borderline.
+","Conclusion: MCI  
+Explanation: The EEG summary indicates a globally reduced Alpha power, which is a significant marker for MCI. Although Theta levels are normal, the elevated Theta/Alpha ratio of 3.01 suggests a notable imbalance between these bands. The presence of these two abnormal markers (reduced Alpha power and elevated Theta/Alpha ratio) aligns with the criteria for classifying as MCI, as multiple EEG markers are abnormal.",MCI,high
+trial12_MCI,MCI,"
+EEG-Based Ontology Reference:
+Mild Cognitive Impairment (MCI) is often reflected in the following EEG markers:
+
+- Elevated Theta power and reduced Alpha power, especially in frontal and parietal regions
+- Suppressed Beta activity, suggesting cognitive slowing
+- Anomalies should be interpreted based on severity (e.g., Alpha ratio < 0.7), the number of affected bands, and distribution across channels
+
+⚠️ Synthetic Data Context:
+- In synthetic data, abnormalities are generated deliberately and consistently — they should be treated as *reliable evidence*
+- If two or more anomalies are present, assume they reflect a clinically significant pattern
+- Do not hesitate to classify as **MCI** when multiple bands show deviations
+
+Classification Guidance:
+- Classify as **MCI** if:
+  - Two or more abnormal EEG markers are present, or
+  - One anomaly is strong and widespread
+
+- Classify as **Control** if:
+  - All EEG ratios are within or near normal range (e.g., Alpha > 1.0), and no abnormalities are detected
+
+- Classify as **Needs clinical review** only when:
+  - One mild or borderline anomaly is present, and it's unclear whether it's significant
+
+
+EEG Summary:
+EEG Summary:
+Alpha power is globally reduced.
+Theta levels are normal.
+Theta/Alpha ratio: 3.10
+Theta/Beta ratio: 0.71
+
+
+Task:
+Based on the EEG summary above, assess the subject's cognitive status.
+
+Respond in the following format:
+Conclusion: [MCI / Control / Needs clinical review]  
+Explanation: [Concise justification referring to EEG patterns]
+
+Use confident ""MCI"" classification if multiple markers are abnormal.
+Avoid using ""review"" unless findings are ambiguous or borderline.
+","Conclusion: MCI  
+Explanation: The EEG summary indicates a globally reduced Alpha power, which is a significant marker for MCI. Additionally, the Theta/Alpha ratio is elevated at 3.10, further supporting the presence of cognitive impairment. Although Theta levels are normal, the combination of reduced Alpha power and an elevated Theta/Alpha ratio constitutes multiple abnormal EEG markers, justifying a confident classification of MCI.",MCI,high
+trial13_MCI,MCI,"
+EEG-Based Ontology Reference:
+Mild Cognitive Impairment (MCI) is often reflected in the following EEG markers:
+
+- Elevated Theta power and reduced Alpha power, especially in frontal and parietal regions
+- Suppressed Beta activity, suggesting cognitive slowing
+- Anomalies should be interpreted based on severity (e.g., Alpha ratio < 0.7), the number of affected bands, and distribution across channels
+
+⚠️ Synthetic Data Context:
+- In synthetic data, abnormalities are generated deliberately and consistently — they should be treated as *reliable evidence*
+- If two or more anomalies are present, assume they reflect a clinically significant pattern
+- Do not hesitate to classify as **MCI** when multiple bands show deviations
+
+Classification Guidance:
+- Classify as **MCI** if:
+  - Two or more abnormal EEG markers are present, or
+  - One anomaly is strong and widespread
+
+- Classify as **Control** if:
+  - All EEG ratios are within or near normal range (e.g., Alpha > 1.0), and no abnormalities are detected
+
+- Classify as **Needs clinical review** only when:
+  - One mild or borderline anomaly is present, and it's unclear whether it's significant
+
+
+EEG Summary:
+EEG Summary:
+Alpha power is globally reduced.
+Theta levels are normal.
+Theta/Alpha ratio: 2.98
+Theta/Beta ratio: 0.72
+
+
+Task:
+Based on the EEG summary above, assess the subject's cognitive status.
+
+Respond in the following format:
+Conclusion: [MCI / Control / Needs clinical review]  
+Explanation: [Concise justification referring to EEG patterns]
+
+Use confident ""MCI"" classification if multiple markers are abnormal.
+Avoid using ""review"" unless findings are ambiguous or borderline.
+","Conclusion: MCI  
+Explanation: The EEG summary indicates a globally reduced Alpha power, which is a significant marker for MCI. Additionally, the Theta/Alpha ratio is elevated at 2.98, further supporting the presence of cognitive impairment. Although Theta levels are normal, the combination of reduced Alpha power and an elevated Theta/Alpha ratio constitutes two abnormal EEG markers, justifying a confident classification of MCI.",MCI,high
+trial14_MCI,MCI,"
+EEG-Based Ontology Reference:
+Mild Cognitive Impairment (MCI) is often reflected in the following EEG markers:
+
+- Elevated Theta power and reduced Alpha power, especially in frontal and parietal regions
+- Suppressed Beta activity, suggesting cognitive slowing
+- Anomalies should be interpreted based on severity (e.g., Alpha ratio < 0.7), the number of affected bands, and distribution across channels
+
+⚠️ Synthetic Data Context:
+- In synthetic data, abnormalities are generated deliberately and consistently — they should be treated as *reliable evidence*
+- If two or more anomalies are present, assume they reflect a clinically significant pattern
+- Do not hesitate to classify as **MCI** when multiple bands show deviations
+
+Classification Guidance:
+- Classify as **MCI** if:
+  - Two or more abnormal EEG markers are present, or
+  - One anomaly is strong and widespread
+
+- Classify as **Control** if:
+  - All EEG ratios are within or near normal range (e.g., Alpha > 1.0), and no abnormalities are detected
+
+- Classify as **Needs clinical review** only when:
+  - One mild or borderline anomaly is present, and it's unclear whether it's significant
+
+
+EEG Summary:
+EEG Summary:
+Alpha power is globally reduced.
+Theta levels are normal.
+Theta/Alpha ratio: 3.07
+Theta/Beta ratio: 0.71
+
+
+Task:
+Based on the EEG summary above, assess the subject's cognitive status.
+
+Respond in the following format:
+Conclusion: [MCI / Control / Needs clinical review]  
+Explanation: [Concise justification referring to EEG patterns]
+
+Use confident ""MCI"" classification if multiple markers are abnormal.
+Avoid using ""review"" unless findings are ambiguous or borderline.
+","Conclusion: MCI  
+Explanation: The EEG summary indicates a globally reduced Alpha power, which is a significant anomaly. Additionally, the Theta/Alpha ratio is elevated at 3.07, further suggesting an imbalance in EEG markers. These two abnormal markers align with the criteria for classifying as MCI, as they reflect a clinically significant pattern of cognitive impairment.",MCI,high
+trial15_MCI,MCI,"
+EEG-Based Ontology Reference:
+Mild Cognitive Impairment (MCI) is often reflected in the following EEG markers:
+
+- Elevated Theta power and reduced Alpha power, especially in frontal and parietal regions
+- Suppressed Beta activity, suggesting cognitive slowing
+- Anomalies should be interpreted based on severity (e.g., Alpha ratio < 0.7), the number of affected bands, and distribution across channels
+
+⚠️ Synthetic Data Context:
+- In synthetic data, abnormalities are generated deliberately and consistently — they should be treated as *reliable evidence*
+- If two or more anomalies are present, assume they reflect a clinically significant pattern
+- Do not hesitate to classify as **MCI** when multiple bands show deviations
+
+Classification Guidance:
+- Classify as **MCI** if:
+  - Two or more abnormal EEG markers are present, or
+  - One anomaly is strong and widespread
+
+- Classify as **Control** if:
+  - All EEG ratios are within or near normal range (e.g., Alpha > 1.0), and no abnormalities are detected
+
+- Classify as **Needs clinical review** only when:
+  - One mild or borderline anomaly is present, and it's unclear whether it's significant
+
+
+EEG Summary:
+EEG Summary:
+Alpha power is globally reduced.
+Theta levels are normal.
+Theta/Alpha ratio: 3.04
+Theta/Beta ratio: 0.70
+
+
+Task:
+Based on the EEG summary above, assess the subject's cognitive status.
+
+Respond in the following format:
+Conclusion: [MCI / Control / Needs clinical review]  
+Explanation: [Concise justification referring to EEG patterns]
+
+Use confident ""MCI"" classification if multiple markers are abnormal.
+Avoid using ""review"" unless findings are ambiguous or borderline.
+","Conclusion: MCI  
+Explanation: The EEG summary indicates a globally reduced Alpha power, which is a significant anomaly. Additionally, the Theta/Alpha ratio is elevated at 3.04, further suggesting an imbalance in EEG markers. These two abnormal markers align with the criteria for classifying as MCI, as multiple bands show deviations from normal patterns.",MCI,high
+trial16_MCI,MCI,"
+EEG-Based Ontology Reference:
+Mild Cognitive Impairment (MCI) is often reflected in the following EEG markers:
+
+- Elevated Theta power and reduced Alpha power, especially in frontal and parietal regions
+- Suppressed Beta activity, suggesting cognitive slowing
+- Anomalies should be interpreted based on severity (e.g., Alpha ratio < 0.7), the number of affected bands, and distribution across channels
+
+⚠️ Synthetic Data Context:
+- In synthetic data, abnormalities are generated deliberately and consistently — they should be treated as *reliable evidence*
+- If two or more anomalies are present, assume they reflect a clinically significant pattern
+- Do not hesitate to classify as **MCI** when multiple bands show deviations
+
+Classification Guidance:
+- Classify as **MCI** if:
+  - Two or more abnormal EEG markers are present, or
+  - One anomaly is strong and widespread
+
+- Classify as **Control** if:
+  - All EEG ratios are within or near normal range (e.g., Alpha > 1.0), and no abnormalities are detected
+
+- Classify as **Needs clinical review** only when:
+  - One mild or borderline anomaly is present, and it's unclear whether it's significant
+
+
+EEG Summary:
+EEG Summary:
+Alpha power is globally reduced.
+Theta levels are normal.
+Theta/Alpha ratio: 3.06
+Theta/Beta ratio: 0.72
+
+
+Task:
+Based on the EEG summary above, assess the subject's cognitive status.
+
+Respond in the following format:
+Conclusion: [MCI / Control / Needs clinical review]  
+Explanation: [Concise justification referring to EEG patterns]
+
+Use confident ""MCI"" classification if multiple markers are abnormal.
+Avoid using ""review"" unless findings are ambiguous or borderline.
+","Conclusion: MCI  
+Explanation: The EEG summary indicates a globally reduced Alpha power, which is a significant marker for MCI. Additionally, the Theta/Alpha ratio is elevated at 3.06, further supporting the presence of cognitive impairment. Although Theta levels are normal, the combination of reduced Alpha power and an elevated Theta/Alpha ratio suggests multiple abnormal EEG markers, warranting a confident classification of MCI.",MCI,high
+trial17_MCI,MCI,"
+EEG-Based Ontology Reference:
+Mild Cognitive Impairment (MCI) is often reflected in the following EEG markers:
+
+- Elevated Theta power and reduced Alpha power, especially in frontal and parietal regions
+- Suppressed Beta activity, suggesting cognitive slowing
+- Anomalies should be interpreted based on severity (e.g., Alpha ratio < 0.7), the number of affected bands, and distribution across channels
+
+⚠️ Synthetic Data Context:
+- In synthetic data, abnormalities are generated deliberately and consistently — they should be treated as *reliable evidence*
+- If two or more anomalies are present, assume they reflect a clinically significant pattern
+- Do not hesitate to classify as **MCI** when multiple bands show deviations
+
+Classification Guidance:
+- Classify as **MCI** if:
+  - Two or more abnormal EEG markers are present, or
+  - One anomaly is strong and widespread
+
+- Classify as **Control** if:
+  - All EEG ratios are within or near normal range (e.g., Alpha > 1.0), and no abnormalities are detected
+
+- Classify as **Needs clinical review** only when:
+  - One mild or borderline anomaly is present, and it's unclear whether it's significant
+
+
+EEG Summary:
+EEG Summary:
+Alpha power is globally reduced.
+Theta levels are normal.
+Theta/Alpha ratio: 3.14
+Theta/Beta ratio: 0.71
+
+
+Task:
+Based on the EEG summary above, assess the subject's cognitive status.
+
+Respond in the following format:
+Conclusion: [MCI / Control / Needs clinical review]  
+Explanation: [Concise justification referring to EEG patterns]
+
+Use confident ""MCI"" classification if multiple markers are abnormal.
+Avoid using ""review"" unless findings are ambiguous or borderline.
+","Conclusion: MCI  
+Explanation: The EEG summary indicates a globally reduced Alpha power, which is a significant marker for MCI. Additionally, the Theta/Alpha ratio is elevated at 3.14, further supporting the presence of cognitive impairment. Although Theta levels are normal, the combination of reduced Alpha power and an elevated Theta/Alpha ratio constitutes two abnormal EEG markers, justifying a confident classification of MCI.",MCI,high
+trial18_MCI,MCI,"
+EEG-Based Ontology Reference:
+Mild Cognitive Impairment (MCI) is often reflected in the following EEG markers:
+
+- Elevated Theta power and reduced Alpha power, especially in frontal and parietal regions
+- Suppressed Beta activity, suggesting cognitive slowing
+- Anomalies should be interpreted based on severity (e.g., Alpha ratio < 0.7), the number of affected bands, and distribution across channels
+
+⚠️ Synthetic Data Context:
+- In synthetic data, abnormalities are generated deliberately and consistently — they should be treated as *reliable evidence*
+- If two or more anomalies are present, assume they reflect a clinically significant pattern
+- Do not hesitate to classify as **MCI** when multiple bands show deviations
+
+Classification Guidance:
+- Classify as **MCI** if:
+  - Two or more abnormal EEG markers are present, or
+  - One anomaly is strong and widespread
+
+- Classify as **Control** if:
+  - All EEG ratios are within or near normal range (e.g., Alpha > 1.0), and no abnormalities are detected
+
+- Classify as **Needs clinical review** only when:
+  - One mild or borderline anomaly is present, and it's unclear whether it's significant
+
+
+EEG Summary:
+EEG Summary:
+Alpha power is globally reduced.
+Theta levels are normal.
+Theta/Alpha ratio: 3.17
+Theta/Beta ratio: 0.75
+
+
+Task:
+Based on the EEG summary above, assess the subject's cognitive status.
+
+Respond in the following format:
+Conclusion: [MCI / Control / Needs clinical review]  
+Explanation: [Concise justification referring to EEG patterns]
+
+Use confident ""MCI"" classification if multiple markers are abnormal.
+Avoid using ""review"" unless findings are ambiguous or borderline.
+","Conclusion: MCI  
+Explanation: The EEG summary indicates a globally reduced Alpha power, which is a significant anomaly. Although Theta levels are normal, the elevated Theta/Alpha ratio of 3.17 suggests a marked deviation from normal patterns. The presence of these two abnormal markers, particularly the reduced Alpha power and the elevated Theta/Alpha ratio, aligns with the criteria for classifying as MCI.",MCI,high
+trial19_MCI,MCI,"
+EEG-Based Ontology Reference:
+Mild Cognitive Impairment (MCI) is often reflected in the following EEG markers:
+
+- Elevated Theta power and reduced Alpha power, especially in frontal and parietal regions
+- Suppressed Beta activity, suggesting cognitive slowing
+- Anomalies should be interpreted based on severity (e.g., Alpha ratio < 0.7), the number of affected bands, and distribution across channels
+
+⚠️ Synthetic Data Context:
+- In synthetic data, abnormalities are generated deliberately and consistently — they should be treated as *reliable evidence*
+- If two or more anomalies are present, assume they reflect a clinically significant pattern
+- Do not hesitate to classify as **MCI** when multiple bands show deviations
+
+Classification Guidance:
+- Classify as **MCI** if:
+  - Two or more abnormal EEG markers are present, or
+  - One anomaly is strong and widespread
+
+- Classify as **Control** if:
+  - All EEG ratios are within or near normal range (e.g., Alpha > 1.0), and no abnormalities are detected
+
+- Classify as **Needs clinical review** only when:
+  - One mild or borderline anomaly is present, and it's unclear whether it's significant
+
+
+EEG Summary:
+EEG Summary:
+Alpha power is globally reduced.
+Theta levels are normal.
+Theta/Alpha ratio: 3.27
+Theta/Beta ratio: 0.75
+
+
+Task:
+Based on the EEG summary above, assess the subject's cognitive status.
+
+Respond in the following format:
+Conclusion: [MCI / Control / Needs clinical review]  
+Explanation: [Concise justification referring to EEG patterns]
+
+Use confident ""MCI"" classification if multiple markers are abnormal.
+Avoid using ""review"" unless findings are ambiguous or borderline.
+","Conclusion: MCI  
+Explanation: The EEG summary indicates a globally reduced Alpha power, which is a significant marker for MCI. Although Theta levels are normal, the elevated Theta/Alpha ratio of 3.27 suggests a strong deviation from normal patterns, further supporting the presence of cognitive impairment. The combination of these abnormalities across multiple EEG markers justifies a confident classification of MCI.",MCI,high
+trial20_MCI,MCI,"
+EEG-Based Ontology Reference:
+Mild Cognitive Impairment (MCI) is often reflected in the following EEG markers:
+
+- Elevated Theta power and reduced Alpha power, especially in frontal and parietal regions
+- Suppressed Beta activity, suggesting cognitive slowing
+- Anomalies should be interpreted based on severity (e.g., Alpha ratio < 0.7), the number of affected bands, and distribution across channels
+
+⚠️ Synthetic Data Context:
+- In synthetic data, abnormalities are generated deliberately and consistently — they should be treated as *reliable evidence*
+- If two or more anomalies are present, assume they reflect a clinically significant pattern
+- Do not hesitate to classify as **MCI** when multiple bands show deviations
+
+Classification Guidance:
+- Classify as **MCI** if:
+  - Two or more abnormal EEG markers are present, or
+  - One anomaly is strong and widespread
+
+- Classify as **Control** if:
+  - All EEG ratios are within or near normal range (e.g., Alpha > 1.0), and no abnormalities are detected
+
+- Classify as **Needs clinical review** only when:
+  - One mild or borderline anomaly is present, and it's unclear whether it's significant
+
+
+EEG Summary:
+EEG Summary:
+Alpha power is globally reduced.
+Theta levels are normal.
+Theta/Alpha ratio: 3.15
+Theta/Beta ratio: 0.75
+
+
+Task:
+Based on the EEG summary above, assess the subject's cognitive status.
+
+Respond in the following format:
+Conclusion: [MCI / Control / Needs clinical review]  
+Explanation: [Concise justification referring to EEG patterns]
+
+Use confident ""MCI"" classification if multiple markers are abnormal.
+Avoid using ""review"" unless findings are ambiguous or borderline.
+","Conclusion: MCI  
+Explanation: The EEG summary indicates a globally reduced Alpha power, which is a significant marker for MCI. Additionally, the Theta/Alpha ratio is elevated at 3.15, further supporting the presence of cognitive impairment. Although Theta levels are normal, the combination of reduced Alpha power and an elevated Theta/Alpha ratio constitutes multiple abnormal EEG markers, justifying a confident classification of MCI.",MCI,high
+trial21_MCI,MCI,"
+EEG-Based Ontology Reference:
+Mild Cognitive Impairment (MCI) is often reflected in the following EEG markers:
+
+- Elevated Theta power and reduced Alpha power, especially in frontal and parietal regions
+- Suppressed Beta activity, suggesting cognitive slowing
+- Anomalies should be interpreted based on severity (e.g., Alpha ratio < 0.7), the number of affected bands, and distribution across channels
+
+⚠️ Synthetic Data Context:
+- In synthetic data, abnormalities are generated deliberately and consistently — they should be treated as *reliable evidence*
+- If two or more anomalies are present, assume they reflect a clinically significant pattern
+- Do not hesitate to classify as **MCI** when multiple bands show deviations
+
+Classification Guidance:
+- Classify as **MCI** if:
+  - Two or more abnormal EEG markers are present, or
+  - One anomaly is strong and widespread
+
+- Classify as **Control** if:
+  - All EEG ratios are within or near normal range (e.g., Alpha > 1.0), and no abnormalities are detected
+
+- Classify as **Needs clinical review** only when:
+  - One mild or borderline anomaly is present, and it's unclear whether it's significant
+
+
+EEG Summary:
+EEG Summary:
+Alpha power is globally reduced.
+Theta levels are normal.
+Theta/Alpha ratio: 3.22
+Theta/Beta ratio: 0.73
+
+
+Task:
+Based on the EEG summary above, assess the subject's cognitive status.
+
+Respond in the following format:
+Conclusion: [MCI / Control / Needs clinical review]  
+Explanation: [Concise justification referring to EEG patterns]
+
+Use confident ""MCI"" classification if multiple markers are abnormal.
+Avoid using ""review"" unless findings are ambiguous or borderline.
+","Conclusion: MCI  
+Explanation: The EEG summary indicates a globally reduced Alpha power, which is a significant marker for MCI. Additionally, the Theta/Alpha ratio is elevated at 3.22, further supporting the presence of cognitive impairment. Although Theta levels are normal, the combination of reduced Alpha power and an elevated Theta/Alpha ratio constitutes two abnormal EEG markers, justifying a confident classification of MCI.",MCI,high
+trial22_MCI,MCI,"
+EEG-Based Ontology Reference:
+Mild Cognitive Impairment (MCI) is often reflected in the following EEG markers:
+
+- Elevated Theta power and reduced Alpha power, especially in frontal and parietal regions
+- Suppressed Beta activity, suggesting cognitive slowing
+- Anomalies should be interpreted based on severity (e.g., Alpha ratio < 0.7), the number of affected bands, and distribution across channels
+
+⚠️ Synthetic Data Context:
+- In synthetic data, abnormalities are generated deliberately and consistently — they should be treated as *reliable evidence*
+- If two or more anomalies are present, assume they reflect a clinically significant pattern
+- Do not hesitate to classify as **MCI** when multiple bands show deviations
+
+Classification Guidance:
+- Classify as **MCI** if:
+  - Two or more abnormal EEG markers are present, or
+  - One anomaly is strong and widespread
+
+- Classify as **Control** if:
+  - All EEG ratios are within or near normal range (e.g., Alpha > 1.0), and no abnormalities are detected
+
+- Classify as **Needs clinical review** only when:
+  - One mild or borderline anomaly is present, and it's unclear whether it's significant
+
+
+EEG Summary:
+EEG Summary:
+Alpha power is globally reduced.
+Theta levels are normal.
+Theta/Alpha ratio: 3.06
+Theta/Beta ratio: 0.71
+
+
+Task:
+Based on the EEG summary above, assess the subject's cognitive status.
+
+Respond in the following format:
+Conclusion: [MCI / Control / Needs clinical review]  
+Explanation: [Concise justification referring to EEG patterns]
+
+Use confident ""MCI"" classification if multiple markers are abnormal.
+Avoid using ""review"" unless findings are ambiguous or borderline.
+","Conclusion: MCI  
+Explanation: The EEG summary indicates a globally reduced Alpha power, which is a significant marker for MCI. Although Theta levels are normal, the elevated Theta/Alpha ratio of 3.06 suggests a notable imbalance between these bands. The presence of these two abnormal markers (reduced Alpha power and elevated Theta/Alpha ratio) aligns with the criteria for classifying as MCI, as multiple EEG markers are abnormal.",MCI,high
+trial23_MCI,MCI,"
+EEG-Based Ontology Reference:
+Mild Cognitive Impairment (MCI) is often reflected in the following EEG markers:
+
+- Elevated Theta power and reduced Alpha power, especially in frontal and parietal regions
+- Suppressed Beta activity, suggesting cognitive slowing
+- Anomalies should be interpreted based on severity (e.g., Alpha ratio < 0.7), the number of affected bands, and distribution across channels
+
+⚠️ Synthetic Data Context:
+- In synthetic data, abnormalities are generated deliberately and consistently — they should be treated as *reliable evidence*
+- If two or more anomalies are present, assume they reflect a clinically significant pattern
+- Do not hesitate to classify as **MCI** when multiple bands show deviations
+
+Classification Guidance:
+- Classify as **MCI** if:
+  - Two or more abnormal EEG markers are present, or
+  - One anomaly is strong and widespread
+
+- Classify as **Control** if:
+  - All EEG ratios are within or near normal range (e.g., Alpha > 1.0), and no abnormalities are detected
+
+- Classify as **Needs clinical review** only when:
+  - One mild or borderline anomaly is present, and it's unclear whether it's significant
+
+
+EEG Summary:
+EEG Summary:
+Alpha power is globally reduced.
+Theta levels are normal.
+Theta/Alpha ratio: 3.16
+Theta/Beta ratio: 0.72
+
+
+Task:
+Based on the EEG summary above, assess the subject's cognitive status.
+
+Respond in the following format:
+Conclusion: [MCI / Control / Needs clinical review]  
+Explanation: [Concise justification referring to EEG patterns]
+
+Use confident ""MCI"" classification if multiple markers are abnormal.
+Avoid using ""review"" unless findings are ambiguous or borderline.
+","Conclusion: MCI  
+Explanation: The EEG summary indicates a globally reduced Alpha power, which is a significant marker for MCI. Although Theta levels are normal, the elevated Theta/Alpha ratio of 3.16 suggests a notable imbalance, further supporting the presence of cognitive impairment. The combination of these two abnormal markers aligns with the criteria for classifying as MCI.",MCI,high
+trial24_MCI,MCI,"
+EEG-Based Ontology Reference:
+Mild Cognitive Impairment (MCI) is often reflected in the following EEG markers:
+
+- Elevated Theta power and reduced Alpha power, especially in frontal and parietal regions
+- Suppressed Beta activity, suggesting cognitive slowing
+- Anomalies should be interpreted based on severity (e.g., Alpha ratio < 0.7), the number of affected bands, and distribution across channels
+
+⚠️ Synthetic Data Context:
+- In synthetic data, abnormalities are generated deliberately and consistently — they should be treated as *reliable evidence*
+- If two or more anomalies are present, assume they reflect a clinically significant pattern
+- Do not hesitate to classify as **MCI** when multiple bands show deviations
+
+Classification Guidance:
+- Classify as **MCI** if:
+  - Two or more abnormal EEG markers are present, or
+  - One anomaly is strong and widespread
+
+- Classify as **Control** if:
+  - All EEG ratios are within or near normal range (e.g., Alpha > 1.0), and no abnormalities are detected
+
+- Classify as **Needs clinical review** only when:
+  - One mild or borderline anomaly is present, and it's unclear whether it's significant
+
+
+EEG Summary:
+EEG Summary:
+Alpha power is globally reduced.
+Theta levels are normal.
+Theta/Alpha ratio: 3.14
+Theta/Beta ratio: 0.72
+
+
+Task:
+Based on the EEG summary above, assess the subject's cognitive status.
+
+Respond in the following format:
+Conclusion: [MCI / Control / Needs clinical review]  
+Explanation: [Concise justification referring to EEG patterns]
+
+Use confident ""MCI"" classification if multiple markers are abnormal.
+Avoid using ""review"" unless findings are ambiguous or borderline.
+","Conclusion: MCI  
+Explanation: The EEG summary indicates a globally reduced Alpha power, which is a significant marker for MCI. Additionally, the Theta/Alpha ratio is elevated at 3.14, further supporting the presence of cognitive impairment. Although Theta levels are normal, the combination of reduced Alpha power and an elevated Theta/Alpha ratio constitutes multiple abnormal EEG markers, justifying a confident classification of MCI.",MCI,high
+trial25_MCI,MCI,"
+EEG-Based Ontology Reference:
+Mild Cognitive Impairment (MCI) is often reflected in the following EEG markers:
+
+- Elevated Theta power and reduced Alpha power, especially in frontal and parietal regions
+- Suppressed Beta activity, suggesting cognitive slowing
+- Anomalies should be interpreted based on severity (e.g., Alpha ratio < 0.7), the number of affected bands, and distribution across channels
+
+⚠️ Synthetic Data Context:
+- In synthetic data, abnormalities are generated deliberately and consistently — they should be treated as *reliable evidence*
+- If two or more anomalies are present, assume they reflect a clinically significant pattern
+- Do not hesitate to classify as **MCI** when multiple bands show deviations
+
+Classification Guidance:
+- Classify as **MCI** if:
+  - Two or more abnormal EEG markers are present, or
+  - One anomaly is strong and widespread
+
+- Classify as **Control** if:
+  - All EEG ratios are within or near normal range (e.g., Alpha > 1.0), and no abnormalities are detected
+
+- Classify as **Needs clinical review** only when:
+  - One mild or borderline anomaly is present, and it's unclear whether it's significant
+
+
+EEG Summary:
+EEG Summary:
+Alpha power is globally reduced.
+Theta levels are normal.
+Theta/Alpha ratio: 3.12
+Theta/Beta ratio: 0.70
+
+
+Task:
+Based on the EEG summary above, assess the subject's cognitive status.
+
+Respond in the following format:
+Conclusion: [MCI / Control / Needs clinical review]  
+Explanation: [Concise justification referring to EEG patterns]
+
+Use confident ""MCI"" classification if multiple markers are abnormal.
+Avoid using ""review"" unless findings are ambiguous or borderline.
+","Conclusion: MCI  
+Explanation: The EEG summary indicates a globally reduced Alpha power, which is a significant marker for MCI. Although Theta levels are normal, the elevated Theta/Alpha ratio of 3.12 suggests a notable imbalance between these bands. The presence of these two abnormal markers (reduced Alpha power and elevated Theta/Alpha ratio) aligns with the criteria for classifying as MCI, as multiple EEG markers are abnormal.",MCI,high
