@@ -103,7 +103,7 @@ channel2 = st.sidebar.selectbox("Select 2nd Subject's EEG Channel", eeg_channels
 
 try:
     file_list_main = list_github_files(f"mci_dataset_neuropose_small/{condition}")
-    file_name_main = next(f for f in file_list_main if "eeg" in f and subject in f, None)
+    file_name_main = next((f for f in file_list_main if "eeg" in f and subject in f), None)
     if file_name_main is None:
         st.error("No EEG file found for the selected subject.")
         st.stop()
@@ -117,7 +117,7 @@ try:
 
             if user_choice == "Yes":
                 file_list_cmp = list_github_files(f"mci_dataset_neuropose_small/{condition2}")
-                file_name_cmp = next(f for f in file_list_cmp if "eeg" in f and subject2 in f)
+                file_name_cmp = next((f for f in file_list_cmp if "eeg" in f and subject2 in f), None)
                 df_trial2 = load_csv_from_github(f"mci_dataset_neuropose_small/{condition2}/{file_name_cmp}")
                 if df_trial2 is not None:
                     ax.plot(df_trial2[channel2][0:768], label=f'{condition2} patient', color='orange')
@@ -136,7 +136,7 @@ try:
 
             if user_choice == "Yes":
                 file_list_cmp = list_github_files(f"mci_dataset_neuropose_small/{condition2}")
-                file_name_cmp = next(f for f in file_list_cmp if "eeg" in f and subject2 in f)
+                file_name_cmp = next((f for f in file_list_cmp if "eeg" in f and subject2 in f), None)
                 df_trial2 = load_csv_from_github(f"mci_dataset_neuropose_small/{condition2}/{file_name_cmp}")
                 if df_trial2 is not None:
                     ax.hist(df_trial2[channel2], bins=50, alpha=0.5, color='orange', label=condition2, density=True)
