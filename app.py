@@ -1,15 +1,48 @@
 import streamlit as st
+import io
 import os
 import re
 import pandas as pd
 import matplotlib.pyplot as plt
+import requests
 
 
 FILE_PATH = 'https://raw.githubusercontent.com/SidEnigma/Alzheimers_Prediction/NeuroSyncAI/mci_dataset_neuropose_small/Healthy'
 ROOT_PATH = 'https://raw.githubusercontent.com/SidEnigma/Alzheimers_Prediction/NeuroSyncAI/mci_dataset_neuropose_small'   # directory with subfolders 'Healthy' and 'MildCognitiveDisorder'
-LLM_PREDICTIONS_PATH = 'NeuroSyncAI\mci_dataset_neuropose_small\llm_subject_predictions_latest_eeg_neuropose.csv'
+LLM_PREDICTIONS_PATH = 'https://raw.githubusercontent.com/SidEnigma/Alzheimers_Prediction/NeuroSyncAI/mci_dataset_neuropose_small/llm_subject_predictions_latest_eeg_neuropose.csv'
 eeg_channels = ['AF3', 'AF4', 'C3', 'C4', 'F3', 'F4', 'F7', 'F8', 'Fp1', 'Fp2', 'O1', 'O2', 'P3', 'P4']
 system_prompt = "You are a clinical assistant analyzing EEG patterns for MCI detection."
+
+
+# GitHub utility functions
+def list_github_files(directory):
+    api_url = f"https://api.github.com/repos/SidEnigma/Alzheimers_Prediction/contents/{directory}?ref=NeuroSyncAI"
+    try:
+        response = requests.get(api_url)
+        response.raise_for_status()
+        files = response.json()
+        return [f["name"] for f in files if f["type"] == "file"]
+    except requests.RequestException as e:
+        st.error(f"Error fetching file list from GitHub: {e}")
+        return []
+
+
+def load_csv_from_github(file_path):
+    raw_url = f"https://raw.githubusercontent.com/SidEnigma/Alzheimers_Prediction/NeuroSyncAI/{file_path}"
+    try:
+        response = requests.get(raw_url)
+        response.raise_for_status()
+        return pd.read_csv(io.StringIO(response.text))
+    except requests.RequestException as e:
+        st.error(f"Error loading CSV file from GitHub: {e}")
+        return None
+
+# --- Helper Functions ---
+def get_file_content(url):
+    response = requests.get(url)
+    response.raise_for_status()  # Raise an exception for bad status codes
+    return response.text
+
 
 # Utility function to extract trial ID
 def extract_trial_id(filename):
@@ -26,11 +59,13 @@ st.header("📈 Signal Visualization")
 st.sidebar.markdown("## Select Subject and EEG Channel")
 
 # Subject Dropdown
-subject_ids = []
-for file in os.listdir(FILE_PATH):
-    if "eeg" in file:
-        trial_id = extract_trial_id(file)
-        subject_ids.append(trial_id)
+condition = "Healthy"
+file_list = list_github_files(f"mci_dataset_neuropose_small/{condition}")
+subject_ids = sorted({extract_trial_id(f) for f in file_list if "eeg" in f and extract_trial_id(f)})
+
+if not subject_ids:
+    st.error("No EEG files found in the GitHub directory.")
+    st.stop()
 
 default_index_s = subject_ids.index("trial1")
 subject = st.sidebar.selectbox("Select Subject", subject_ids, index=default_index_s)
@@ -66,75 +101,58 @@ if condition2 is not "Healthy":
 default_index_c2 = eeg_channels.index("Fp1")
 channel2 = st.sidebar.selectbox("Select 2nd Subject's EEG Channel", eeg_channels, index=default_index_c2)
 
-# Load and Plot EEG Signal
-subject_file_path = os.path.join(ROOT_PATH, condition)
-if os.path.exists(subject_file_path):
-    for file in os.listdir(subject_file_path):
-        if "eeg" and subject in file:
-            file_path = os.path.join(subject_file_path, file)
-            df_trial = pd.read_csv(file_path)
+try:
+    file_list_main = list_github_files(f"mci_dataset_neuropose_small/{condition}")
+    file_name_main = next(f for f in file_list_main if "eeg" in f and subject in f)
+    df_trial = load_csv_from_github(f"mci_dataset_neuropose_small/{condition}/{file_name_main}")
+    
+    if df_trial is not None:
+        if viz_type == "Signal Line Graph":
+            fig, ax = plt.subplots(figsize=(30, 6))
+            ax.plot(df_trial[channel][0:768], label=f'{condition} patient', color='cornflowerblue')
 
-            if viz_type == "Signal Line Graph":
-                # st.markdown(f'<h3>EEG Signal from {channel} Channel (First 3s)</h3>', unsafe_allow_html=True)
-            
-                fig, ax = plt.subplots(figsize=(30, 6))
-                ax.plot(df_trial[channel][0:768], label=f'{condition} patient', color='cornflowerblue')
+            if user_choice == "Yes":
+                file_list_cmp = list_github_files(f"mci_dataset_neuropose_small/{condition2}")
+                file_name_cmp = next(f for f in file_list_cmp if "eeg" in f and subject2 in f)
+                df_trial2 = load_csv_from_github(f"mci_dataset_neuropose_small/{condition2}/{file_name_cmp}")
+                if df_trial2 is not None:
+                    ax.plot(df_trial2[channel2][0:768], label=f'{condition2} patient', color='orange')
 
-                # If comparing with another subject
-                if str(user_choice) == "Yes" and subject2 and condition2 and channel2:
-                    # Load and Plot 2nd Subject's EEG Signal
-                    subject2_file_path = os.path.join(ROOT_PATH, condition2)
-                    for file2 in os.listdir(subject2_file_path):
-                        if "eeg" and subject2 in file2:
-                            file_path2 = os.path.join(subject2_file_path, file2)
-                            df_trial2 = pd.read_csv(file_path2)
-                            ax.plot(df_trial2[channel2][0:768], label=f'{condition2} patient', color='orange')
-                            break
+            ax.set_xlabel('Time (samples)', fontsize=22)
+            ax.set_ylabel('Amplitude (µV)', fontsize=22)
+            ax.set_title(f'EEG Signal - {channel} Channel', fontsize=22)
+            ax.tick_params(axis='both', labelsize=20)
+            ax.legend(fontsize=20)
+            st.pyplot(fig)
 
-                ax.set_xlabel('Time (samples)', fontsize=22)
-                ax.set_ylabel('Amplitude (µV)', fontsize=22)
-                ax.set_title(f'EEG Signal - {channel} Channel', fontsize=22)
-                ax.tick_params(axis='both', labelsize=20)
-                ax.legend(fontsize=20)
-                st.pyplot(fig)
-                break
+        elif viz_type == "Histogram":
+            st.markdown(f'<h3>Histogram of EEG Channel {channel}</h3>', unsafe_allow_html=True)
+            fig, ax = plt.subplots(figsize=(30, 6))
+            ax.hist(df_trial[channel], bins=50, alpha=0.5, color='cornflowerblue', label=condition, density=True)
 
-            elif viz_type == "Histogram":
-                st.markdown(f'<h3>Histogram of EEG Channel {channel}</h3>', unsafe_allow_html=True)
+            if user_choice == "Yes":
+                file_list_cmp = list_github_files(f"mci_dataset_neuropose_small/{condition2}")
+                file_name_cmp = next(f for f in file_list_cmp if "eeg" in f and subject2 in f)
+                df_trial2 = load_csv_from_github(f"mci_dataset_neuropose_small/{condition2}/{file_name_cmp}")
+                if df_trial2 is not None:
+                    ax.hist(df_trial2[channel2], bins=50, alpha=0.5, color='orange', label=condition2, density=True)
 
-                fig, ax = plt.subplots(figsize=(30, 6))
-                ax.hist(df_trial[channel], bins=50, alpha=0.5, color='cornflowerblue', label=condition, density=True)
+            ax.set_xlabel("Amplitude (µV)", fontsize=16)
+            ax.set_ylabel("Density", fontsize=16)
+            ax.set_title(f"Histogram of EEG Channel {channel}", fontsize=18)
+            ax.tick_params(axis='both', labelsize=14)
+            ax.legend(fontsize=14)
+            st.pyplot(fig)
+except Exception as e:
+    st.error(f"Unexpected error during visualization: {e}")
 
-                # If comparing with another subject
-                if str(user_choice) == "Yes" and subject2 and condition2 and channel2:
-                    # Load and Plot 2nd Subject's EEG Signal
-                    subject2_file_path = os.path.join(ROOT_PATH, condition2)
-                    for file2 in os.listdir(subject2_file_path):
-                        if "eeg" and subject2 in file2:
-                            file_path2 = os.path.join(subject2_file_path, file2)
-                            df_trial2 = pd.read_csv(file_path2)
-                            ax.hist(df_trial2[channel2], bins=50, alpha=0.5, color='orange', label=condition2, density=True)
-                            break
-
-                ax.set_xlabel("Amplitude (µV)", fontsize=16)
-                ax.set_ylabel("Density", fontsize=16)
-                ax.set_title(f"Histogram of EEG Channel {channel}", fontsize=18)
-                ax.tick_params(axis='both', labelsize=14)
-                ax.legend(fontsize=14)
-                st.pyplot(fig)
-                break
-else:
-    st.warning(f"File not found: {subject_file_path}")
-
+# LLM Prediction Section
 st.header("🤖 Predict and Summarize Subject's Condition")
-
-# System Prompt + Ask LLM Button
 st.text_input("System Prompt", value=system_prompt, disabled=True)
 ask_llm = st.button("Ask LLM")
 
-# LLM Response Box
 if ask_llm:
-    if os.path.exists(LLM_PREDICTIONS_PATH):
+    try:
         df_llm = pd.read_csv(LLM_PREDICTIONS_PATH)
         subject_key = f"{subject}_{condition}"
         result_row = df_llm[df_llm['Subject'] == subject_key]
@@ -143,17 +161,18 @@ if ask_llm:
             prediction = result_row.iloc[0]['LLM Decision']
             confidence = str(result_row.iloc[0]['Confidence']).capitalize()
 
-            # Display heading
             st.markdown('<h3>LLM Response</h3>', unsafe_allow_html=True)
-
             col1, col2 = st.columns(2)
             col1.markdown(f"**Prediction:** {prediction}")
             col2.markdown(f"**Confidence Level:** {confidence}")
 
-            llm_response_trimmed = llm_response.split('\n', 1)[1].split(':', 1)[1].strip() if '\n' in llm_response and ':' in llm_response.split('\n', 1)[1] else llm_response
-            st.text_area("Explanation", value=llm_response_trimmed, height=150)
+            if '\n' in llm_response and ':' in llm_response.split('\n', 1)[1]:
+                llm_response_trimmed = llm_response.split('\n', 1)[1].split(':', 1)[1].strip()
+            else:
+                llm_response_trimmed = llm_response
 
+            st.text_area("Explanation", value=llm_response_trimmed, height=150)
         else:
             st.error(f"No LLM response found for subject: {subject_key}")
-    else:
-        st.error("LLM response file not found.")
+    except Exception as e:
+        st.error(f"Error loading LLM predictions: {e}")
