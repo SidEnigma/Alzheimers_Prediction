@@ -5,8 +5,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
-FILE_PATH = 'https:\\raw.githubusercontent.com\SidEnigma\Alzheimers_Prediction\NeuroSyncAI\mci_dataset_neuropose_small\Healthy'
-ROOT_PATH = 'https:\\raw.githubusercontent.com\SidEnigma\Alzheimers_Prediction\NeuroSyncAI\mci_dataset_neuropose_small'   # directory with subfolders 'Healthy' and 'MildCognitiveDisorder'
+FILE_PATH = 'https://raw.githubusercontent.com/SidEnigma/Alzheimers_Prediction/NeuroSyncAI/mci_dataset_neuropose_small/Healthy'
+ROOT_PATH = 'https://raw.githubusercontent.com/SidEnigma/Alzheimers_Prediction/NeuroSyncAI/mci_dataset_neuropose_small'   # directory with subfolders 'Healthy' and 'MildCognitiveDisorder'
 LLM_PREDICTIONS_PATH = 'NeuroSyncAI\mci_dataset_neuropose_small\llm_subject_predictions_latest_eeg_neuropose.csv'
 eeg_channels = ['AF3', 'AF4', 'C3', 'C4', 'F3', 'F4', 'F7', 'F8', 'Fp1', 'Fp2', 'O1', 'O2', 'P3', 'P4']
 system_prompt = "You are a clinical assistant analyzing EEG patterns for MCI detection."
