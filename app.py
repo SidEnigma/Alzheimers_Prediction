@@ -16,7 +16,7 @@ system_prompt = "You are a clinical assistant analyzing EEG patterns for MCI det
 
 # GitHub utility functions
 def list_github_files(directory):
-    api_url = f"https://api.github.com/repos/SidEnigma/Alzheimers_Prediction/tree/main/NeuroSyncAI"
+    api_url = f"https://api.github.com/repos/SidEnigma/Alzheimers_Prediction/tree/main/NeuroSyncAI/{directory}"
     try:
         response = requests.get(api_url)
         response.raise_for_status()
