@@ -103,7 +103,11 @@ channel2 = st.sidebar.selectbox("Select 2nd Subject's EEG Channel", eeg_channels
 
 try:
     file_list_main = list_github_files(f"mci_dataset_neuropose_small/{condition}")
-    file_name_main = next(f for f in file_list_main if "eeg" in f and subject in f)
+    file_name_main = next(f for f in file_list_main if "eeg" in f and subject in f, None)
+    if file_name_main is None:
+        st.error("No EEG file found for the selected subject.")
+        st.stop()
+
     df_trial = load_csv_from_github(f"mci_dataset_neuropose_small/{condition}/{file_name_main}")
     
     if df_trial is not None:
