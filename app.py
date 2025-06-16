@@ -5,6 +5,7 @@ import re
 import pandas as pd
 import matplotlib.pyplot as plt
 import requests
+import random
 
 
 # FILE_PATH = 'https://raw.githubusercontent.com/SidEnigma/Alzheimers_Prediction/NeuroSyncAI/mci_dataset_neuropose_small/Healthy'
@@ -71,9 +72,11 @@ default_index_s = subject_ids.index("trial1")
 subject = st.sidebar.selectbox("Select Subject", subject_ids, index=default_index_s)
 
 # Condition Radio Buttons
-condition = st.sidebar.radio("Select Subject's Condition", ["Healthy", "Mild Cognitive Disorder"])
-if condition is not "Healthy":
-    condition = "MCI"
+# condition = st.sidebar.radio("Select Subject's Condition", ["Healthy", "Mild Cognitive Disorder"])
+# if condition is not "Healthy":
+#     condition = "MCI"
+
+condition, condition2 = random.sample(["Healthy", "MCI"], 2)
 
 # Channel Dropdown
 default_index_c = eeg_channels.index("Fp1")
@@ -93,9 +96,9 @@ default_index_s2 = subject_ids.index("trial2")
 subject2 = st.sidebar.selectbox("Select 2nd Subject for comparison", subject_ids, index=default_index_s2)
 
 # Condition Radio Buttons
-condition2 = st.sidebar.radio("Select 2nd Subject's Condition", ["Healthy", "Mild Cognitive Disorder"], index=1)
-if condition2 is not "Healthy":
-    condition2 = "MCI"
+# condition2 = st.sidebar.radio("Select 2nd Subject's Condition", ["Healthy", "Mild Cognitive Disorder"], index=1)
+# if condition2 is not "Healthy":
+#     condition2 = "MCI"
 
 # Channel Dropdown
 default_index_c2 = eeg_channels.index("Fp1")
