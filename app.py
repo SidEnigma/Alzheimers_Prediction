@@ -114,16 +114,18 @@ try:
     df_trial = load_csv_from_github(f"mci_dataset_neuropose_small/{condition}/{file_name_main}")
     
     if df_trial is not None:
+        color1 = 'cornflowerblue' if condition == 'Healthy' else 'orange'
         if viz_type == "Signal Line Graph":
             fig, ax = plt.subplots(figsize=(30, 6))
-            ax.plot(df_trial[channel][0:768], label=f'{condition} patient', color='cornflowerblue')
+            ax.plot(df_trial[channel][0:768], label=f'{condition} patient', color=color1)
 
             if user_choice == "Yes":
                 file_list_cmp = list_github_files(f"mci_dataset_neuropose_small/{condition2}")
                 file_name_cmp = next((f for f in file_list_cmp if "eeg" in f and subject2 in f), None)
                 df_trial2 = load_csv_from_github(f"mci_dataset_neuropose_small/{condition2}/{file_name_cmp}")
                 if df_trial2 is not None:
-                    ax.plot(df_trial2[channel2][0:768], label=f'{condition2} patient', color='orange')
+                    color2 = 'cornflowerblue' if condition2 == 'Healthy' else 'orange'
+                    ax.plot(df_trial2[channel2][0:768], label=f'{condition2} patient', color=color2)
 
             ax.set_xlabel('Time (samples)', fontsize=22)
             ax.set_ylabel('Amplitude (µV)', fontsize=22)
@@ -135,14 +137,15 @@ try:
         elif viz_type == "Histogram":
             st.markdown(f'<h3>Histogram of EEG Channel {channel}</h3>', unsafe_allow_html=True)
             fig, ax = plt.subplots(figsize=(30, 6))
-            ax.hist(df_trial[channel], bins=50, alpha=0.5, color='cornflowerblue', label=condition, density=True)
+            ax.hist(df_trial[channel], bins=50, alpha=0.5, color=color1, label=condition, density=True)
 
             if user_choice == "Yes":
                 file_list_cmp = list_github_files(f"mci_dataset_neuropose_small/{condition2}")
                 file_name_cmp = next((f for f in file_list_cmp if "eeg" in f and subject2 in f), None)
                 df_trial2 = load_csv_from_github(f"mci_dataset_neuropose_small/{condition2}/{file_name_cmp}")
                 if df_trial2 is not None:
-                    ax.hist(df_trial2[channel2], bins=50, alpha=0.5, color='orange', label=condition2, density=True)
+                    color2 = 'cornflowerblue' if condition2 == 'Healthy' else 'orange'
+                    ax.hist(df_trial2[channel2], bins=50, alpha=0.5, color=color2, label=condition2, density=True)
 
             ax.set_xlabel("Amplitude (µV)", fontsize=16)
             ax.set_ylabel("Density", fontsize=16)
