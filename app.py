@@ -8,6 +8,13 @@ import requests
 import random
 
 
+st.set_page_config(
+    page_title="Predicting Alzheimers",
+    page_icon="🧠",
+    layout="wide",
+    initial_sidebar_state="expanded",
+)
+
 # FILE_PATH = 'https://raw.githubusercontent.com/SidEnigma/Alzheimers_Prediction/NeuroSyncAI/mci_dataset_neuropose_small/Healthy'
 # ROOT_PATH = 'https://raw.githubusercontent.com/SidEnigma/Alzheimers_Prediction/NeuroSyncAI/mci_dataset_neuropose_small'   # directory with subfolders 'Healthy' and 'MildCognitiveDisorder'
 LLM_PREDICTIONS_PATH = 'https://raw.githubusercontent.com/SidEnigma/Alzheimers_Prediction/main/NeuroSyncAI/mci_dataset_neuropose_small/llm_subject_predictions_latest_eeg_neuropose.csv'
@@ -49,8 +56,6 @@ def get_file_content(url):
 def extract_trial_id(filename):
     match = re.search(r'(trial\d+)', filename)
     return match.group(1) if match else None
-
-st.set_page_config(layout="wide")
 
 # UI Layout
 st.title("Analyzing EEG signals for MCI detection")
