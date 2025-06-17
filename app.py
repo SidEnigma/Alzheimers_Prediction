@@ -23,6 +23,7 @@ system_prompt = "You are a clinical assistant analyzing EEG patterns for MCI det
 
 
 # GitHub utility functions
+@st.cache_data
 def list_github_files(directory):
     api_url = f"https://api.github.com/repos/SidEnigma/Alzheimers_Prediction/contents/NeuroSyncAI/{directory}"
     try:
@@ -34,7 +35,7 @@ def list_github_files(directory):
         st.error(f"Error fetching file list from GitHub: {e}")
         return []
 
-
+@st.cache_data
 def load_csv_from_github(file_path):
     raw_url = f"https://raw.githubusercontent.com/SidEnigma/Alzheimers_Prediction/main/NeuroSyncAI/{file_path}"
     try:
