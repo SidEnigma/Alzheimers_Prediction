@@ -135,7 +135,7 @@ try:
 
             ax.set_xlabel('Time (samples)', fontsize=22)
             ax.set_ylabel('Amplitude (µV)', fontsize=22)
-            ax.set_title(f'EEG Signal - {channel} Channel', fontsize=22)
+            ax.set_title(f'EEG Signal from {channel} Channel (First 3s)', fontsize=22)
             ax.tick_params(axis='both', labelsize=20)
             ax.legend(fontsize=20)
             st.pyplot(fig)
