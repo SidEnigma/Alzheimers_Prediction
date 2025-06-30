@@ -163,7 +163,7 @@ except Exception as e:
     st.error(f"Unexpected error during visualization: {e}")
 
 # LLM Prediction Section
-st.header("🤖 Predict and Summarize First Subject's Condition")
+st.header("🪄 Predict and Summarize First Subject's Condition")
 st.text_input("System Prompt", value=system_prompt, disabled=True)
 ask_llm = st.button("Ask LLM")
 
